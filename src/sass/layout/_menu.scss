@@ -1,0 +1,149 @@
+.menu-page {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+
+  @include breakpoint('tablet') {
+    background: transparent;
+    position: relative;
+    width: auto;
+    left: 0;
+  }
+
+  .menu-company-logo {
+    width: 126px;
+    display: inline-block;
+  }
+
+  .menu-header{
+    border-bottom: 1px solid #ededed;
+    display: block;
+
+    @include breakpoint('tablet') {
+      display: none;
+    }
+  }
+
+  .menu-page-items {
+    float: none;
+    margin: 15px 0 40px;
+    
+    @include breakpoint('tablet') {
+      margin: 0;
+      float: right;
+    }
+
+    .item {
+      display: block;
+      margin: 0;
+
+      @include breakpoint('tablet') {
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: -9px;
+      }
+
+      a {
+        color: map-get($colors, grey-dark);
+        text-decoration: none;
+        padding: 20px 0;
+        font-size: 16px;
+        display: block;
+      
+        @include breakpoint('tablet') {
+          color: white;
+          padding: 0;
+          line-height: 1;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .menu-user {
+    display: block;
+
+    @include breakpoint('tablet') {
+      display: none;
+    }
+  }
+
+  .close-menu {
+    float: right;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .telephone {
+    float: right;
+  }
+}
+
+.header-menu {
+    
+  .header-menu-items {
+    float: right;
+
+    .item {
+      margin-left: 20px;
+
+      @include breakpoint('tablet') {
+        margin-left: 40px;
+      }
+    }
+
+    .telephone {
+      width: 26px;
+      display: inline-block;
+      vertical-align: top;
+
+      @include breakpoint('tablet') {
+        vertical-align: text-bottom;
+      }
+    }
+
+    .icon-hamburger {
+      color: white;
+      font-size: 26px;
+      cursor: pointer;
+      margin-top: -3px;
+      display: inline-block;
+      
+      @include breakpoint('tablet') {
+        display: none;
+      }
+    }
+
+    .login {
+      display: none;
+      
+      @include breakpoint('tablet') {
+        display: inline-block;
+      }
+
+    }
+  }
+}
+
+
+body {
+  left: 0;
+  overflow-y: initial;
+
+  &.menu-open {
+    left: 100%;
+    overflow: hidden;
+
+    @include breakpoint('tablet') {
+      left: 0;
+    }
+  }
+}

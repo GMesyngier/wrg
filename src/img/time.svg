@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="469 731 86.797 75.899">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e8e8e8;
+      }
+
+      .cls-2 {
+        fill: #fafafc;
+      }
+
+      .cls-3 {
+        fill: #efefef;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #c8d41b;
+      }
+
+      .cls-6 {
+        fill: #333;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #333;
+        stroke-miterlimit: 10;
+        stroke-width: 1.857px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="37.908" cy="37.908" r="37.908" transform="translate(0)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_20" data-name="Group 20" transform="translate(469 731.143)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="37.908" cy="37.908" r="37.908" transform="translate(10.848 -0.06)"/>
+    <path id="Path_17" data-name="Path 17" class="cls-2" d="M56.337,37.024H52.021S42.282,31.6,35.75,31.6H13.005s-5.424,0-5.424,5.424A3.375,3.375,0,0,0,8.69,40.29S4.374,41.4,4.374,46.763c0,0,1.108,3.266,2.158,3.266,0,0-3.266,0-3.266,4.316S5.424,58.66,5.424,58.66,0,59.769,0,65.134s5.424,5.424,6.474,5.424h6.474l13.005,6.474a50.654,50.654,0,0,0,8.69-3.266c4.374-2.158,15.163-7.582,16.271-8.69h5.424V37.024Z" transform="translate(0 -13.23)"/>
+    <path id="Path_18" data-name="Path 18" class="cls-3" d="M14.4,45.816H25.189L13.7,45Z" transform="translate(-5.71 -18.816)"/>
+    <path id="Path_19" data-name="Path 19" class="cls-3" d="M10.308,62.433H21.156L9.2,61.5Z" transform="translate(-3.835 -25.693)"/>
+    <path id="Path_20" data-name="Path 20" class="cls-3" d="M7.966,77h9.739L6.1,75.6Z" transform="translate(-2.542 -31.57)"/>
+    <path id="Path_21" data-name="Path 21" class="cls-3" d="M22.3,98.4H43.937l-20.47.583Z" transform="translate(-9.295 -41.073)"/>
+    <g id="Group_19" data-name="Group 19" transform="translate(10.981 -0.143)">
+      <g id="Group_18" data-name="Group 18" class="cls-4" transform="translate(75.816 75.816) rotate(180)">
+        <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-5" width="17.321" height="31.434" transform="translate(0.175 21.578)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-6" width="13.005" height="31.434" transform="translate(56.337 22.685)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-6" cx="11.897" cy="11.897" r="11.897" transform="translate(50.913 27.059)"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-7" cx="10.731" cy="10.731" r="10.731" transform="translate(52.08 28.226)"/>
+    <path id="Path_22" data-name="Path 22" class="cls-8" d="M107.7,53.9v7.582l2.741,2.683" transform="translate(-44.889 -22.525)"/>
+  </g>
+</svg>

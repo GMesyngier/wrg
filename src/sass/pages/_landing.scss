@@ -1,0 +1,311 @@
+.landing-page {
+
+
+  // -----------------  Section 1
+
+  .send-something-section {
+    color: white;
+    background: map-get($colors, grey-dark);
+
+    h1 {
+      width: 265px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .send-something-form {
+      margin-top: 30px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      @include breakpoint('tablet') {
+        max-width: 320px;
+      }
+    }
+
+    .select-vehicle {
+      
+      h4 {
+        margin: 15px 0;
+      }
+    }
+
+    .btn-vehicle {
+      font-family: 'Quicksand';
+      background-color: map-get($colors, green-light);
+      display: flex;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      height: 150px;
+      cursor: pointer;
+
+      .btn-vehicle-column {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(2) {
+          background-color: map-get($colors, green-dark);
+        }
+      }
+
+      .icon-vehicle {
+        width: 55px;
+      }
+
+      .vehicle-name {
+        border-top: 1px solid map-get($colors, green-dark);
+        color: map-get($colors, green-dark);
+        margin: 10px 0;
+        padding-top: 10px;
+        font-weight: 400;
+      }
+
+      .vehicle-details {
+        font-family: 'HelveticaNu';
+        font-weight: 2  00;
+        font-size: 13px;
+        color: map-get($colors, green-dark);
+        text-align: center;
+      }
+
+      .vehicle-price {
+        font-size: 45px;
+        font-weight: 400;
+      }
+
+      .vehicle-action {
+        font-family: 'HelveticaNu';
+        font-weight: 600;
+        font-size: 13px;
+        color: map-get($colors, green-light);
+        letter-spacing: 1;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+
+    .call-us {
+      text-align: center;
+      margin-top: 25px;
+
+      .icon-telephone {
+        width: 38px;
+        vertical-align: middle;
+      }
+
+      .call-us-brief {
+        vertical-align: middle;
+      }
+    }
+    
+    .btn-purchase {
+      margin-top: 25px;
+      display: none;
+    }
+  }
+
+
+  // ----------------- Section 2
+
+  .steps-section {
+    position: relative;
+
+    .mobile-line {
+      position: absolute;
+      left: 50%;
+      top: 55px;
+      bottom: 55px;
+      margin-left: -124px;
+      width: 1px;
+      background: map-get($colors, green-light);
+      display: block;
+
+      @include breakpoint('tablet') {
+        display: none;
+      }
+    }
+
+    .steps-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      @include breakpoint('tablet') {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .step {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      margin: 25px 0;
+
+      @include breakpoint('tablet') {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .step-image {
+      width: 78px;
+      margin: 0;
+
+      @include breakpoint('tablet') {
+        width: 105px;
+        margin: 15px 0 15px 40px;
+      }
+
+      &.step-time {
+        width: 88px;
+        margin-left: -11px;
+
+        @include breakpoint('tablet') {
+          width: 115px;
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .step-description {
+      padding-left: 40px;
+      max-width: 250px;
+
+      h2 {
+        font-weight: 400;
+        color: map-get($colors, green-light);
+      }
+      
+      p {
+        line-height: 1.5;
+        margin-top: 5px;
+      }
+    }
+  }
+
+
+  // ----------------- Section 3
+
+  .video-section {
+    position: relative;
+    // height: 56.25vw;
+
+    .section-title {
+      display: none;
+
+      @include breakpoint('tablet') {
+        display: block;
+      }
+    }
+  }
+
+  .video-container {
+    width: 100%;
+    height: 56.25vw;
+    z-index: 0;
+    //pointer-events: none;
+    overflow: hidden;
+
+    iframe {
+      width: 100vw;
+      height: 56.25vw; // Height 16:9 aspect ratio 56.25 ||  Width given a 16:9 aspect ratio 177.77 
+      position: absolute;
+      top: 0x;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // ----------------- Section 4
+
+  .values-section {
+    background: map-get($colors, grey-light);
+    padding: 0;
+
+    @include breakpoint('tablet') {
+      padding-bottom: 35px;
+    }
+
+    .values-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      padding: 0 20px;
+      margin: 0 auto;
+      max-width: 1560px;
+
+      @include breakpoint('tablet') {
+        flex-direction: row;
+      }
+    }
+
+    .value {
+      background: none;
+      position: relative;
+      margin: 0 0 15px;
+
+      @include breakpoint('tablet') {
+        background: white;
+        margin: 15px;
+      }
+        
+      .value-image {
+        height: 140px;
+
+        @include breakpoint('tablet') {
+          height: 355px;
+        }
+
+        &.value-01 {
+          background: transparent url('../img/value-01@2x.png') center center no-repeat;
+          background-size: cover;
+        }
+
+        &.value-02 {
+          background: transparent url('../img/value-02@2x.png') center center no-repeat;
+          background-size: cover;
+        }
+
+        &.value-03 {
+          background: transparent url('../img/value-03@2x.png') center center no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .value-title {
+        color: white;
+        position: absolute;
+        top: 105px;
+        left: 15px;
+        text-shadow: 0px 1px 3px rgba(0,0,0, 0.6);
+
+        @include breakpoint('tablet') {
+          color: map-get($colors, green-light );
+          text-shadow: none;
+          position: relative;
+          left:0;
+          top:0;
+          padding: 35px 35px 0;
+        }
+      }
+
+      .value-description {
+        line-height: 1.5;
+        padding: 15px 0;
+
+        @include breakpoint('tablet') { 
+          padding: 10px 35px 35px;
+        }
+      }
+    }
+  }
+
+  // ----------------- Section 5
+}

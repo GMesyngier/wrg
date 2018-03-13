@@ -1,0 +1,146 @@
+body, html {
+  font-family: 'HelveticaNu';
+  font-weight: 200;
+  position: relative;
+  @include transition(left 0.3s ease-in-out);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: 'Quicksand';
+  line-height: 1.5;
+}
+
+h1, .h1 {
+  font-weight: 200;
+  font-size: 24px;
+
+  @include breakpoint('tablet') {
+    font-size: 42px;
+  }
+}
+
+h2, .h2 {
+  font-weight: 600;
+  font-size: 22px;
+
+  @include breakpoint('tablet') {
+    font-size: 35px;
+  }
+}
+
+h3, .h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'HelveticaNu';
+  font-size: 14px;
+  font-weight: 200;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  background: map-get($colors, green-light);
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 28px;
+  padding: 15px 40px;
+  display: block;
+
+  &.btn-ghost {
+    background: transparent;
+    color: map-get($colors, green-light);
+    border: 1px solid map-get($colors, green-light);
+  }
+}
+
+.section-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+    padding: 30px 0;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      background: map-get($colors, grey-dark);
+      content: '';
+      display: none;
+      height: 2px;
+      width: 60px;
+
+      @include breakpoint('tablet') {
+        display: block;
+      }
+    }
+  }
+
+  @include breakpoint('tablet') {
+    padding: 90px 30px 60px;
+  }
+}
+
+.container {
+  padding: 25px 20px;
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+.form-container {
+  position: relative;
+  margin-top: 15px;
+
+  .form-icon {
+    @include vertical-align;
+    left: 25px;
+    font-size: 20px;
+    color: map-get($colors, grey-dark);
+  }
+
+  input {
+    padding: 25px 20px 25px 55px;
+  }
+}
+
+input {
+  font-size: 16px;
+  padding: 25px 20px;
+  width: 100%;
+  border: 1px map-get($colors, grey-dark) solid;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(map-get($colors, grey-dark), .4);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(map-get($colors, grey-dark), .4);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(map-get($colors, grey-dark), .4);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(map-get($colors, grey-dark), .4);
+}
+
+
+.clearfix {
+  @include clearfix;
+}

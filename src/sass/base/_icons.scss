@@ -1,0 +1,67 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-clock:before {
+  content: "\e902";
+}
+.icon-hand-up:before {
+  content: "\e903";
+}
+.icon-hand-left:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e602";
+}
+.icon-note:before {
+  content: "\e61d";
+}
+.icon-cross:before {
+  content: "\e646";
+}
+.icon-arrow-up:before {
+  content: "\e648";
+}
+.icon-arrow-left:before {
+  content: "\e649";
+}
+.icon-arrow-right:before {
+  content: "\e64a";
+}
+.icon-arrow-down:before {
+  content: "\e64b";
+}
+.icon-van:before {
+  content: "\e66d";
+}
+.icon-box:before {
+  content: "\e687";
+}
+.icon-hamburger:before {
+  content: "\e68e";
+}
+.icon-house:before {
+  content: "\e69b";
+}
+.icon-email:before {
+  content: "\e75a";
+}

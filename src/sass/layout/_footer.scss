@@ -1,0 +1,49 @@
+.footer {
+  background: transparent url(../img/footer-bg.svg) center top no-repeat;
+  background-size: cover;
+  padding-top: 280px;
+  padding-bottom: 45px;
+  margin-top: 25px;
+  color: white;
+
+
+  .footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+    @include breakpoint('tablet') {
+      flex-wrap: no-wrap;
+    }
+  }
+  .footer-column {
+
+    &.footer-logo {
+      flex-basis: 100%;
+      text-align: center;
+
+      @include breakpoint('tablet') {
+        flex-basis: auto;
+      }
+
+      .logo {
+        width: 150px;
+        margin: 0 0 60px;
+      }
+    }
+  }
+
+  .column-links {
+
+    li {
+      margin-top: 15px;
+    }
+
+    .link {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+header.header
+  .container.clearfix
+    a.header-company-logo(href='#')
+      img.logo(src='./img/logo-white.svg', alt='wecargo')
+    .header-menu
+      .header-menu-items
+        a.item.telephone(href='tel:900 876 456')
+          img.icon-telephone(src='./img/icon-telephone.svg', alt='900 876 456')
+        a.item.btn.btn-ghost.login(href='#') Iniciar sesión
+        .item.open-menu.icon-hamburger
+      include menu

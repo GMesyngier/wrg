@@ -1,0 +1,94 @@
+extends layout/main
+
+block bodyClass
+  - bodyClasses.push('landing-page')
+
+block content
+  section.send-something-section
+    .container
+      h1 <strong>Envía algo.</strong> Nosotros lo llevamos a su destino
+
+      form.send-something-form(name='main-form')
+        .form-container 
+          span.form-icon.icon-house
+          input(id='initial-place', placeholder='Dónde recogemos tu envío')
+        .form-container 
+          span.form-icon.icon-box
+          input(id='final-place', placeholder='Dónde entregamos tu envío')
+        
+        .select-vehicle 
+
+          h4.text-center Qué vehículo necesitas
+          
+          .btn-vehicle
+
+            .btn-vehicle-column
+              img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
+              .vehicle-name F/500
+              .vehicle-details 2mts x 3mts<br>500kg 
+
+            .btn-vehicle-column
+              .vehicle-price 35€
+              .vehicle-action CAMBIAR<br>VEHÍCULO
+          
+          a.btn.btn-ghost.btn-purchase(href="#") Contratar
+
+          .call-us
+            img.icon-telephone(src='./img/icon-telephone-white.svg', alt='900 876 456')
+            span.call-us-brief Si tienes dudas 900 876 456
+
+  section.steps-section
+    .container
+      .steps-container
+        .mobile-line
+        .step
+          img.step-image.step-time(src='./img/time.svg', alt='Entrega puntual')
+          .step-description
+            h2 Entrega puntual
+            p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
+        .step
+          img.step-image(src='./img/value.svg', alt='Precio cerrado')
+          .step-description
+            h2 Precio cerrado
+            p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
+        .step
+          img.step-image(src='./img/shield.svg', alt='Seguro mercancías')
+          .step-description
+            h2 Seguro mercancías
+            p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
+        .step
+          img.step-image(src='./img/vehicles.svg', alt='+1000 vehículos')
+          .step-description
+            h2 +1000 vehículos
+            p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
+
+  section.video-section
+    .section-title
+      h2.title Por qué Wecargo
+    .video-container 
+      iframe(src="https://player.vimeo.com/video/240463021?1&color=73848B&title=0&byline=0&portrait=0", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+  
+  section.values-section
+    .section-title
+      h2.title Qué nos diferencia
+    .values-container
+      .value
+        .value-image.value-01
+        h3.value-title Valor 1
+        p.value-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Euismod tincidunt.
+      .value
+        .value-image.value-02
+        h3.value-title Valor 2
+        p.value-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Euismod tincidunt.
+      .value
+        .value-image.value-03
+        h3.value-title Valor 3
+        p.value-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Euismod tincidunt.
+  
+  section.where-section
+    .section-title
+      h2.title Dónde estamos
+  
+  section.contact-section
+    .section-title
+      h2.title Contacta con nosotros

@@ -1,0 +1,13 @@
+.header {
+  background: map-get( $colors, black);
+
+  .header-company-logo {
+    width: 126px;
+    float: left;
+    margin-top: 0;
+
+    @include breakpoint('tablet') {
+      margin-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Wecargo ignore projct files #
+
+build/public/**
+node_modules/
+src/bower_components/
