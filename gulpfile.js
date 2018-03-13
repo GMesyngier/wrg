@@ -1,8 +1,10 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var pug = require('gulp-pug');
-var sass  = require('gulp-sass');
-var uglify  = require('gulp-uglify');
+var gulp = require('gulp'),
+    browserSync = require('browser-sync').create(),
+    pug = require('gulp-pug'),
+    sass  = require('gulp-sass'),
+    uglify  = require('gulp-uglify'),
+    rename = require('gulp-rename');
+
 
 var configuration = {
   paths: {
@@ -50,6 +52,10 @@ gulp.task('js', function () {
 gulp.task('pug', function() {
   gulp.src('./src/pages/*.pug')
   .pipe(pug())
+  .pipe(gulp.dest(configuration.paths.dist))
+  .pipe(rename({
+    extname: ".php"
+  }))
   .pipe(gulp.dest(configuration.paths.dist))
 });
 
