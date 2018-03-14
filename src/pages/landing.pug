@@ -86,9 +86,45 @@ block content
         p.value-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Euismod tincidunt.
   
   section.where-section
+
     .section-title
       h2.title Dónde estamos
+      p.description Lorem ipsum dolor sit amet, consectetuer,<br>.sed diam nonummy nibh
+    img.where-map.mobile-map(src='./img/map-mobile@2x.png', alt='Donde estamos')
+  
+    .container
+
+      .where-description-container
+        .line
+        .description-item
+          .country Madrid
+          .street Calle Menéndez Pelayo, 1<br>56783, La latina
+        .description-item
+          .country Barcelona
+          .street Calle Menéndez Pelayo, 1<br>56783, La latina
+
+    img.where-map.desktop-map(src='./img/map-desktop@2x.png', alt='Donde estamos')
+
   
   section.contact-section
+
     .section-title
       h2.title Contacta con nosotros
+      p.description Lorem ipsum dolor sit amet, consectetuer,<br>.sed diam nonummy nibh
+
+    .container
+      form.contact-form(name='contact-form')
+        .form-container 
+          span.form-icon.icon-user
+          input(id='name', placeholder='Nombre y apellidos')
+        .form-container 
+          span.form-icon.icon-phone
+          input(id='telephone', placeholder='Teléfono')
+        .form-container 
+          span.form-icon.icon-email
+          input(id='email', placeholder='Email')
+        .form-container 
+          span.form-icon.icon-note
+          textarea(id='contact-mesage', placeholder='Haznos tu consulta')
+
+        a.btn.btn.btn-send(href="#") Enviar

@@ -92,6 +92,11 @@ b, strong {
       }
     }
   }
+  
+  .description {
+    margin-top: -15px;
+    line-height: 1.5;
+  }
 
   @include breakpoint('tablet') {
     padding: 90px 30px 60px;
@@ -109,18 +114,19 @@ b, strong {
   margin-top: 15px;
 
   .form-icon {
-    @include vertical-align;
+    position: absolute;
+    top: 24px;
     left: 25px;
     font-size: 20px;
     color: map-get($colors, grey-dark);
   }
 
-  input {
+  input, textarea {
     padding: 25px 20px 25px 55px;
-  }
+  } 
 }
 
-input {
+input, textarea {
   font-size: 16px;
   padding: 25px 20px;
   width: 100%;
