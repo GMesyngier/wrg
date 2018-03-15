@@ -8,6 +8,7 @@ body, html {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: 'Quicksand';
   line-height: 1.5;
+  letter-spacing: 0.5;
 }
 
 h1, .h1 {
@@ -25,6 +26,7 @@ h2, .h2 {
 
   @include breakpoint('tablet') {
     font-size: 35px;
+    font-weight: 400;
   }
 }
 
@@ -72,14 +74,19 @@ b, strong {
   margin: 0;
   text-align: center;
 
+  @include breakpoint('tablet') {
+    padding: 90px 30px 50px;
+  }
+
   h2 {
     display: inline-block;
-    padding: 30px 0;
+    padding: 30px 0 25px;
     position: relative;
+    line-height: 1.5;
 
     &:after {
       position: absolute;
-      bottom: 15px;
+      bottom: 10px;
       left: 0;
       background: map-get($colors, grey-dark);
       content: '';
@@ -96,10 +103,6 @@ b, strong {
   .description {
     margin-top: -15px;
     line-height: 1.5;
-  }
-
-  @include breakpoint('tablet') {
-    padding: 90px 30px 60px;
   }
 }
 
@@ -120,10 +123,12 @@ b, strong {
     left: 25px;
     font-size: 20px;
     color: map-get($colors, grey-dark);
+    transition: color .3s ease-in-out;
   }
 
   input, textarea {
     padding: 25px 20px 25px 55px;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
   } 
 }
 

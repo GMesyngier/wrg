@@ -10,11 +10,11 @@ block content
 
       form.send-something-form(name='main-form')
         .form-container
-          span.form-icon.icon-house
           input(id='initial-place', placeholder='Dónde recogemos tu envío')
-        .form-container 
-          span.form-icon.icon-box
+          span.form-icon.icon-house
+        .form-container
           input(id='final-place', placeholder='Dónde entregamos tu envío')
+          span.form-icon.icon-box
         
         .select-vehicle 
 
@@ -44,22 +44,22 @@ block content
         .step
           img.step-image.step-time(src='./img/time.svg', alt='Entrega puntual')
           .step-description
-            h2 Entrega puntual
+            h2 Entrega<br>puntual
             p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
         .step
           img.step-image(src='./img/value.svg', alt='Precio cerrado')
           .step-description
-            h2 Precio cerrado
+            h2 Precio<br>cerrado
             p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
         .step
           img.step-image(src='./img/shield.svg', alt='Seguro mercancías')
           .step-description
-            h2 Seguro mercancías
+            h2 Seguro<br>mercancías
             p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
         .step
           img.step-image(src='./img/vehicles.svg', alt='+1000 vehículos')
           .step-description
-            h2 +1000 vehículos
+            h2 Más de 1000<br>vehículos
             p Lorem ipsum dolor sit  nibh, consectet adipiscix nonummy
 
   section.video-section
@@ -98,15 +98,15 @@ block content
         .line
         .description-item
           .country Madrid
-          .street Calle Menéndez Pelayo, 1<br>56783, La latina
+          .street Calle Menéndez Pelayo, 1 56783, La latina
         .description-item
           .country Barcelona
-          .street Calle Menéndez Pelayo, 1<br>56783, La latina
+          .street Calle Menéndez Pelayo, 1 56783, La latina
 
     img.where-map.desktop-map(src='./img/map-desktop@2x.png', alt='Donde estamos')
 
   
-  section.contact-section
+  section.contact-section#contact
 
     .section-title
       h2.title Contacta con nosotros
@@ -114,17 +114,19 @@ block content
 
     .container
       form.contact-form(name='contact-form')
-        .form-container 
-          span.form-icon.icon-user
-          input(id='name', placeholder='Nombre y apellidos')
-        .form-container 
-          span.form-icon.icon-phone
-          input(id='telephone', placeholder='Teléfono')
-        .form-container 
-          span.form-icon.icon-email
-          input(id='email', placeholder='Email')
-        .form-container 
-          span.form-icon.icon-note
-          textarea(id='contact-mesage', placeholder='Haznos tu consulta')
+        .clearfix
+          .container-inputs
+            .form-container
+              input(id='name', placeholder='Nombre y apellidos')
+              span.form-icon.icon-user
+            .form-container
+              input(id='telephone', placeholder='Teléfono')
+              span.form-icon.icon-phone
+            .form-container
+              input(id='email', placeholder='Email')
+              span.form-icon.icon-email
+          .form-container.container-textarea
+            textarea(id='contact-mesage', placeholder='Haznos tu consulta')
+            span.form-icon.icon-note
 
         a.btn.btn.btn-send(href="#") Enviar

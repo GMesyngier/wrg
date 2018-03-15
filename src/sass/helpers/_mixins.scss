@@ -58,7 +58,7 @@
 @mixin breakpoint ($point, $value:0) {
 
 	@if $point == "tablet" {
-		@media (min-width: 768px) { @content; }
+		@media (min-width: 960px) { @content; }
 	}
 
 	@else if $point == "desktop" {
