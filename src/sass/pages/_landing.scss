@@ -6,20 +6,41 @@
   .send-something-section {
     color: white;
     background: map-get($colors, grey-dark);
+    position: relative;
+    padding-bottom: 0;
+
+    @include breakpoint('tablet') { 
+      background: transparent url('../img/landing-top-bg@2x.jpg') center center no-repeat;
+      background-size: cover;
+      padding-bottom: 67px;
+    }
 
     h1 {
       width: 265px;
       text-align: center;
       margin: 0 auto;
+
+      @include breakpoint('tablet') {
+        @include vertical-align;
+        text-align: left;
+        margin-top: -40px;
+        width: 45%;
+        max-width: 550px;
+      }
     }
 
     .send-something-form {
       margin-top: 30px;
-      max-width: 100%;
+      width: 100%;
       margin: 0 auto;
+      float: none;
 
       @include breakpoint('tablet') {
-        max-width: 320px;
+        width: 412px;
+        background: map-get($colors, grey-dark);
+        padding: 30px 35px 35px;
+        margin: 20px 0;
+        float: right;
       }
     }
 
@@ -91,6 +112,18 @@
     .call-us {
       text-align: center;
       margin-top: 25px;
+      padding: 0;
+      position: relative;
+      background: none;
+
+      @include breakpoint('tablet') {
+        position: absolute;
+        width: 100%;
+        background: map-get($colors, green-light);
+        left: 0;
+        bottom: 0;
+        padding: 15px 0;
+      }
 
       .icon-telephone {
         width: 38px;
@@ -104,10 +137,8 @@
     
     .btn-purchase {
       margin-top: 25px;
-      display: none;
     }
   }
-
 
   // ----------------- Section 2
 
