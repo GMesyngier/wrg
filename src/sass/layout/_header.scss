@@ -5,6 +5,8 @@
     width: 126px;
     float: left;
     margin-top: 0;
+    position: relative;
+    z-index: 1;
 
     @include breakpoint('tablet') {
       margin-top: 12px;

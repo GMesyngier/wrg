@@ -59,8 +59,15 @@ b, strong {
   text-align: center;
   text-decoration: none;
   border-radius: 28px;
+  border: none;
   padding: 15px 40px;
+  width: 100%;
+  cursor: pointer;
   display: block;
+
+  @include breakpoint('tablet') {
+    width: auto; 
+  }
 
   &.btn-ghost {
     background: transparent;
@@ -142,16 +149,18 @@ input, textarea {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(map-get($colors, grey-dark), .4);
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: rgba(map-get($colors, grey-dark), .4);
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: rgba(map-get($colors, grey-dark), .4);
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: rgba(map-get($colors, grey-dark), .4);
 }
-
 
 .clearfix {
   @include clearfix;

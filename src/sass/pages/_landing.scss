@@ -53,10 +53,10 @@
       }
     }
 
-    .select-vehicle {
+    .vehicle {
       
       h4 {
-        margin: 15px 0;
+        margin: 25px 0;
       }
     }
 
@@ -151,15 +151,8 @@
     }
     
     .btn-purchase {
-      display: none;
       margin-top: 25px;
-    }
-
-    &.complete {
-    
-      .btn-purchase {
-        display: block;
-      } 
+      width: 100%;
     }
   }
 

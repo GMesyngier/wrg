@@ -91,6 +91,8 @@
     
   .header-menu-items {
     float: right;
+    position: relative;
+    z-index: 10;
 
     .item {
       margin-left: 20px;

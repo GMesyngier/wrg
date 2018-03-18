@@ -14,3 +14,29 @@ $('.scroll-section').click(function(e) {
       scrollTop: $(section).offset().top
   });
 });
+
+
+// Overlay
+
+$('.btn-overlay').on('click',function(e){
+  e.preventDefault();
+  var overlay = $('.overlay#' + $(this).attr('data-overlay'));
+  overlay.append('<a class="icon-cross close-overlay"></a>')
+  overlay.fadeIn();
+  overlay.addClass('overlay-opened');
+
+  $('.close-overlay').on('click', function(e){
+    $(this).remove();
+    $('.overlay-opened').fadeOut();
+    $('.overlay-opened').removeClass('overlay-opened');
+  });
+});
+
+
+// Slider
+
+$('.select-vehicle-slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3
+});
