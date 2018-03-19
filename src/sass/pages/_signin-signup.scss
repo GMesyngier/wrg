@@ -1,0 +1,56 @@
+//----------- All
+
+.signin, .signup, .signin-signup {
+
+  .container-inputs {
+    margin: 25px 0;
+  }
+
+  .form-description {
+    line-height: 1.5;
+  }
+}
+
+//----------- Desktop
+
+.signin-signup {
+
+  .form-container {
+    text-align: center;
+  }
+
+  .section-title {
+    padding: 0px;
+    
+    @include breakpoint("tablet") {
+      padding: 20px 30px 20px;
+    }
+  }
+  
+  .form-description {
+    color: white;
+  }
+
+  .section-title-box {
+    color:  map-get($colors, green-light);
+  }
+
+  form {
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 25px;
+    background: map-get($colors, grey-dark);
+    width: 100%;
+    vertical-align: top;
+    
+    @include breakpoint("tablet") {
+      width: 400px;
+      margin: 15px;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}
