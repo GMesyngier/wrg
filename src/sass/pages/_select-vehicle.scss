@@ -38,7 +38,7 @@
   .image-vehicle {
     margin: 25px auto;
     width: 265px;
-    height: 265px;
+    height: 235px;
     padding: 25px;
     background: #EFEFEF;
     border: 1px solid grey;
@@ -78,8 +78,8 @@
   }
 
   .vehicle-features {
-    width: 320px;
-    margin: 40px auto 0;
+    width: 300px;
+    margin: 35px auto 0;
     
     .feature-item {
       width: 50%;
@@ -103,16 +103,17 @@
 }
 
 .select-vehicle-slider-nav {
-    display:block;
-    position: fixed;
-    width: 320px;
-    bottom: 15px;
-    left: 50%;
-    @include transform(translateX(-50%));
+  background: white;
+  display:block;
+  position: fixed;
+  width: 320px;
+  bottom: 15px;
+  left: 50%;
+  @include transform(translateX(-50%));
 
-    .slick-track {
-      @include transform(translate3d(0px, 0px, 0px) !important);
-    }
+  .slick-track {
+    @include transform(translate3d(0px, 0px, 0px) !important);
+  }
 
   a {
     padding: 18px;
