@@ -82,7 +82,9 @@
       }
 
       .icon-vehicle {
-        width: 55px;
+        width: 55px; 
+        filter: brightness(0);
+        opacity: 0.4;
       }
 
       .vehicle-name {

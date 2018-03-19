@@ -30,6 +30,12 @@
 	box-sizing: $value;
 }
 
+@mixin transform ($value) {
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	transform: $value;
+}
+
 @mixin vertical-align {
 	position: absolute;
 	top: 50%;
