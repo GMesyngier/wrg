@@ -1,0 +1,9 @@
+.dropdown {
+  max-height: 0;
+  overflow: hidden;
+  @include transition(max-height 0.5s ease-in-out);
+  
+  &.dropdown-opened {
+    max-height: 500px;
+  }
+}

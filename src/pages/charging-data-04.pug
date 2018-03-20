@@ -8,13 +8,13 @@ block content
     .container
       ul.header-steps.clearfix
         li.header-steps-item
-          a.current(href="charging-data-01.html") 01
+          a(href="charging-data-01.html") 01
         li.header-steps-item
           a(href="charging-data-02.html") 02
         li.header-steps-item
           a(href="charging-data-03.html") 03
         li.header-steps-item
-          a(href="charging-data-04.html") 04
+          a.current(href="charging-data-04.html") 04
 
       .charging-summary
         .summary-menu.clearfix
@@ -48,22 +48,14 @@ block content
   section.charging-data
     .container
       .charging-data-title.data-title-fixed
-        h2 ¿Qué vehículo necesitas?
+        h2 Datos de pago
     
-      .btn-vehicle.btn-overlay(data-overlay='overlay-vehicle')
-        .btn-vehicle-column
-          img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
-          .vehicle-name F/500
-          .vehicle-details 2mts x 3mts<br>500kg 
-
-        .btn-vehicle-column
-          .vehicle-price 35€
-          .vehicle-action CAMBIAR<br>VEHÍCULO
+      
 
       .charging-data-nav
-        a.next(href="charging-data-02.html")
-          span 02
-          span.icon-arrow-right
+        a.prev(href="charging-data-03.html") 
+          span.icon-arrow-left
+          span  03
 
     .overlay#overlay-vehicle
       include select-vehicle

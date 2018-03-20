@@ -36,6 +36,7 @@ $('.btn-overlay').on('click',function(e){
   });
 });
 
+
 // Select Vehicle
 
 $('.select-vehicle-slider').slick({
@@ -54,3 +55,12 @@ $('.select-vehicle-slider-nav').slick({
 });
 
 $('input:radio[name=vehicle1]').click();
+
+
+// Dropdown
+
+$('.btn-dropdown').on('click',function(e){
+  e.preventDefault();
+  var dropdown = $('.dropdown#' + $(this).attr('data-dropdown'));
+  dropdown.toggleClass('dropdown-opened');
+});

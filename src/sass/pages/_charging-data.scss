@@ -2,13 +2,10 @@
 
   // ----------- General
 
-  .charging-summary {
-    position: relative;
-  }
-
+  
   .charging-header {
     position: position;
-    background: map-get($colors, grey-light)
+    background: map-get($colors, grey-light);
   }
 
   .header-steps {
@@ -27,7 +24,7 @@
         color: #BCBCBB;
         border-bottom: 1px solid #BCBCBB;
         padding: 10px 0;
-        margin: 0 0 40px;
+        margin: 0 0 20px;
 
         &.current {
           margin-top: -20px;
@@ -39,6 +36,105 @@
       }
     }
   }
+
+  .charging-summary {
+    position: relative;
+  }
+
+  .summary-menu {
+    color: map-get($colors, green-dark);
+    margin-bottom: 8px;
+
+    .summary-price-model {
+      float: left;
+
+      .price {
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+
+    .btn-summary {
+      float: right;
+      padding-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: map-get($colors, green-dark);
+    }
+  }
+
+  .summary-details {
+    
+    .detail {
+      padding: 25px 0;
+
+      &.detail-place {
+        position: relative;
+        border-top: 1px solid map-get($colors, green-light);
+
+        .from {
+          position: absolute;
+          left: 35px;
+          top: 26px;
+        }
+
+        .to {
+          position: absolute;
+          left: 35px;
+          top: 80px;
+        }
+      }
+
+      &.detail-contact {
+        padding-top: 0;
+        border-bottom: 1px solid map-get($colors, green-light);
+      }
+
+      &.detail-time {
+        
+        .date {
+          float: left;
+          width: 50%;
+        }
+
+        .hour {
+          float: left;
+          width: 50%;
+        }
+      }
+    }
+
+    .icon-vehicle {
+      width: 55px;  
+      margin-right: 15px;
+  
+    }
+
+    .icon-place {
+      width: 18px;
+    }
+
+    .icon {
+      font-size: 20px;
+      color: map-get($colors, green-light);
+      padding-right: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  .charging-data-title {
+
+    h2 {
+      font-family: 'HelveticaNu';
+      font-weight: 400;
+      color: map-get($colors, green-light);
+      margin: 15px 0;  
+    }
+  }
+
+
 
   .charging-data-nav {
     @include clearfix;
