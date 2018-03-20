@@ -6,3 +6,4 @@ src/bower_components/
 .idea/
 **/package-lock
 /package-lock.json
+/package.json
