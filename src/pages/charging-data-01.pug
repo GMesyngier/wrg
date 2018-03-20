@@ -1,0 +1,66 @@
+extends layout/main
+
+block bodyClass
+  - bodyClasses.push('charging-data-page')
+
+block content
+  .charging-header
+    .container
+      ul.header-steps
+        li.header-steps-item
+          a.current(href="#") 01
+        li.header-steps-item
+          a(href="#") 02
+        li.header-steps-item
+          a(href="#") 03
+        li.header-steps-item
+          a(href="#") 04
+
+      .charging-summary
+        .summary-price-model
+          span.price 35€
+          span /
+          span.model F500
+        a.btn-summary
+          Ver Resumen 
+          span.icon-arrow-down
+        ul.summary-details
+          li.detail.detail-vehicle
+            img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
+            | F/500
+          li.detail.detail-pace
+            img.icon-vehicle(src='./img/icon-place.svg', alt='Van')
+            .from Carrer de Pere IV, 51, 08018
+            .to Avenida Meridiana, 131, 08028
+          li.detail.detail-contact
+            span.icon-user
+            .contact Andrea
+          li.detail.detail-date
+            .date.icon-calendar 17/03/2018
+            .hour.icon-clock 11:15
+
+  section.charging-data
+    .container
+      .charging-data-title.data-title-fixed
+        h2 ¿Qué vehículo necesitas?
+    
+      .btn-vehicle.btn-overlay(data-overlay='overlay-vehicle')
+        .btn-vehicle-column
+          img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
+          .vehicle-name F/500
+          .vehicle-details 2mts x 3mts<br>500kg 
+
+        .btn-vehicle-column
+          .vehicle-price 35€
+          .vehicle-action CAMBIAR<br>VEHÍCULO
+
+      .charging-data-nav
+        a.prev(href="#") 
+          span.icon-arrow-left
+          span  00
+        a.next(href="#")
+          span 01 
+          span.icon-arrow-right
+
+    .overlay#overlay-vehicle
+      include select-vehicle

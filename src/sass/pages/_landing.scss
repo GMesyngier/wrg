@@ -1,32 +1,70 @@
 .landing-page {
 
+  .menu-page {
 
-  // -----------------  Section 1
+    .menu-page-items {
+
+      .item.contact {
+        display: inline-block;
+      }
+    }
+  }
+  // -----------------  Envía algo.
 
   .send-something-section {
     color: white;
     background: map-get($colors, grey-dark);
+    position: relative;
+    padding-bottom: 0;
+
+    @include breakpoint('tablet') { 
+      background: transparent url('../img/landing-top-bg@2x.jpg') center center no-repeat;
+      background-size: cover;
+      padding-bottom: 67px;
+    }
 
     h1 {
       width: 265px;
       text-align: center;
       margin: 0 auto;
+
+      @include breakpoint('tablet') {
+        @include vertical-align;
+        text-align: left;
+        margin-top: -40px;
+        width: 45%;
+        max-width: 550px;
+      }
     }
 
     .send-something-form {
       margin-top: 30px;
-      max-width: 100%;
+      width: 100%;
       margin: 0 auto;
+      float: none;
 
       @include breakpoint('tablet') {
-        max-width: 320px;
+        width: 412px;
+        background: map-get($colors, grey-dark);
+        padding: 30px 35px 35px;
+        margin: 20px 0;
+        float: right;
+      }
+
+      input:not(:placeholder-shown) {
+        background: map-get($colors, green-light);
+        color: map-get($colors, green-dark);
+
+        +span { 
+          color: map-get($colors, green-dark);
+        }
       }
     }
 
-    .select-vehicle {
+    .vehicle {
       
       h4 {
-        margin: 15px 0;
+        margin: 25px 0;
       }
     }
 
@@ -52,7 +90,9 @@
       }
 
       .icon-vehicle {
-        width: 55px;
+        width: 55px; 
+        filter: brightness(0);
+        opacity: 0.4;
       }
 
       .vehicle-name {
@@ -91,6 +131,18 @@
     .call-us {
       text-align: center;
       margin-top: 25px;
+      padding: 0;
+      position: relative;
+      background: none;
+
+      @include breakpoint('tablet') {
+        position: absolute;
+        width: 100%;
+        background: map-get($colors, green-light);
+        left: 0;
+        bottom: 0;
+        padding: 15px 0;
+      }
 
       .icon-telephone {
         width: 38px;
@@ -99,17 +151,22 @@
 
       .call-us-brief {
         vertical-align: middle;
+        font-size: 16px;
+        font-family: 'Quicksand';
+
+        @include breakpoint('tablet') {
+          font-size: 20px; 
+        }
       }
     }
     
     .btn-purchase {
       margin-top: 25px;
-      display: none;
+      width: 100%;
     }
   }
 
-
-  // ----------------- Section 2
+  // ----------------- Steps
 
   .steps-section {
     position: relative;
@@ -117,8 +174,8 @@
     .mobile-line {
       position: absolute;
       left: 50%;
-      top: 55px;
-      bottom: 55px;
+      top: 80px;
+      bottom: 80px;
       margin-left: -124px;
       width: 1px;
       background: map-get($colors, green-light);
@@ -180,7 +237,12 @@
 
       h2 {
         font-weight: 400;
-        color: map-get($colors, green-light);
+        color: map-get($colors, green-light); 
+        font-size: 22px;
+
+        @include breakpoint('tablet') {
+          font-size: 26px;
+        }
       }
       
       p {
@@ -191,7 +253,7 @@
   }
 
 
-  // ----------------- Section 3
+  // ----------------- Por qué Wecargo
 
   .video-section {
     position: relative;
@@ -199,6 +261,7 @@
 
     .section-title {
       display: none;
+      padding-top: 25px;
 
       @include breakpoint('tablet') {
         display: block;
@@ -223,7 +286,7 @@
     }
   }
 
-  // ----------------- Section 4
+  // ----------------- Qué nos diferencia
 
   .values-section {
     background: map-get($colors, grey-light);
@@ -247,7 +310,7 @@
     }
 
     .value {
-      background: none;
+      background: transparent;
       position: relative;
       margin: 0 0 15px;
 
@@ -260,7 +323,7 @@
         height: 140px;
 
         @include breakpoint('tablet') {
-          height: 355px;
+          height: 400px;
         }
 
         &.value-01 {
@@ -282,11 +345,13 @@
       .value-title {
         color: white;
         position: absolute;
-        top: 105px;
+        top: 98px;
         left: 15px;
+        font-size: 22px;  
         text-shadow: 0px 1px 3px rgba(0,0,0, 0.6);
 
         @include breakpoint('tablet') {
+          font-size: 26px;  
           color: map-get($colors, green-light );
           text-shadow: none;
           position: relative;
@@ -298,29 +363,43 @@
 
       .value-description {
         line-height: 1.5;
-        padding: 15px 0;
+        padding: 15px;
+        font-size: 14px;
 
         @include breakpoint('tablet') { 
           padding: 10px 35px 35px;
+          font-size: 16px;
         }
       }
     }
   }
 
-  // ----------------- Section 5
+  // ----------------- Dónde estamos
 
   .where-section {
     background: map-get($colors, grey-dark);
     color: white;
-    padding: 25px 0 0;
+    padding: 5px 0 0;
 
     @include breakpoint('tablet') {
       color: map-get($colors, grey-dark);
       background: transparent;
     }
 
+    .container {
+      padding-bottom: 70px;
+
+      @include breakpoint('tablet') {
+        padding-bottom: 50px;
+      }
+    }
+
     .section-title {
       padding: 0 0 25px;
+  
+      @include breakpoint('tablet') {
+        padding: 90px 30px 50px;
+      }
 
       .description {
         display: block;
@@ -333,7 +412,7 @@
 
     .where-map {
       width: 100%;
-      margin: 25px 0;
+      margin: 15px 0;
     }
 
     .desktop-map {
@@ -341,6 +420,7 @@
 
       @include breakpoint('tablet') {
         display: block;
+        margin-bottom: 0;
       }
     }
 
@@ -357,6 +437,10 @@
       position: relative;
       text-align: center;
 
+      @include breakpoint('tablet') {
+        text-align: left;
+      }
+
       .line {
         position: absolute;
         left: 50%;
@@ -370,16 +454,21 @@
       width: 50%;
       padding: 0 25px;
       display: inline-block;
-      padding: 15px 0;
+
+      @include breakpoint('tablet') {
+        padding: 0 85px;
+      }
 
       .country {
         font-size: 16px;
         color: map-get($colors, green-light);
 
+        @include breakpoint('tablet') {
+          font-size: 22px;
+        }  
       }
-
       .street {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.5;
         margin-top: 10px;
       }
@@ -387,7 +476,7 @@
   }
 
 
-  // ----------------- Section 6
+  // ----------------- Contactenos
 
   .contact-section {
 
@@ -403,16 +492,55 @@
       }
     }
 
+    .container-inputs {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+  
+      @include breakpoint('tablet') {
+        float: left;
+        width: 50%;
+        padding-right: 8px;
+      }
+    }
+
+    .container-textarea {
+      float: none;
+      width: 100%;
+      padding-left: 0;
+  
+      @include breakpoint('tablet') {
+        float: right;
+        width: 50%;
+        padding-left: 8px;
+      }
+    }
+
     textarea {
       height: 190px;
+      width: 100%;
       max-width: 100%;
       max-height: 190px;
       min-width: 100%;
       min-height: 190px;
+  
+      @include breakpoint('tablet') {
+        max-width: 100%;
+        min-height: 243px;
+        min-width: 100%;
+        min-height: 243px;
+      }
     }
 
     .btn-send {
-      margin-top: 25px;
+      max-width: 100%;
+      margin: 25px 0;
+  
+      @include breakpoint('tablet') {
+        max-width: 320px;
+        margin: 55px auto 0;
+        
+      }
     }
   }
 }

@@ -1,0 +1,149 @@
+.select-vehicle-slider {
+  text-align: center;
+
+  .item-option {
+    position: relative;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      height: 100%;
+      width: 94%;
+      left: 0;
+      &:checked + label {
+
+        .image-vehicle {
+          border-color: map-get($colors, green-dark);
+        }
+
+        .icon-check {
+          @include transform(scale(1));
+        }
+
+        .price {
+          background: map-get($colors, green-dark);
+        }
+      }
+    }
+  }
+
+  .vehicle-title {
+    color: map-get($colors, green-dark);
+  }
+
+  .vehicle-description {
+    color: rgba(0,0,0, 0.6);
+  }
+
+  .image-vehicle {
+    margin: 25px auto;
+    width: 265px;
+    height: 235px;
+    padding: 25px;
+    background: #EFEFEF;
+    border: 1px solid grey;
+    position: relative;
+    @include transition(border-color 0.3s ease-in-out);
+
+    .icon-check {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 30px;
+      color: map-get($colors, green-dark);
+      @include transform(scale(0));
+      @include transition(transform 0.3s ease-in-out);
+    }
+
+    .picture {
+      @include vertical-align;
+      width: 80%;
+    }
+
+    .price {
+      font-size: 30px;
+      color: white;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      background: grey;
+      position: absolute;
+      bottom: -42.5px;
+      left: 50%;
+      line-height: 2.7;
+      @include transition(background-color 0.3s ease-in-out);
+      @include transform(translateX(-50%));
+
+    }
+  }
+
+  .vehicle-features {
+    width: 300px;
+    margin: 35px auto 0;
+    
+    .feature-item {
+      width: 50%;
+      display: inline-block;
+      margin: 10px 0 0;
+      
+      .item-title {
+        color: map-get($colors, green-dark);
+        font-family: 'Quicksand';
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 2.5;
+      }
+      
+      .item-description {
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.select-vehicle-slider-nav {
+  background: white;
+  display:block;
+  position: fixed;
+  width: 320px;
+  bottom: 15px;
+  left: 50%;
+  @include transform(translateX(-50%));
+
+  .slick-track {
+    @include transform(translate3d(0px, 0px, 0px) !important);
+  }
+
+  a {
+    padding: 18px;
+    display: inline-block;
+    transition: color .3s ease-in-out;
+    font-weight: 600;
+    height: 60px;
+    border-bottom: 1px solid #BCBCBB;
+    @include transition(margin 0.3s ease-in-out, filter 0.3s ease-in-out, border-color 0.3s ease-in-out);
+    
+
+    img {
+      filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+    }
+    
+    &.slick-current {
+      margin-top: -10px;
+      border-bottom: 1px solid map-get($colors, green-light );
+
+      img {
+        filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+      }
+    }
+  }
+}

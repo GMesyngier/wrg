@@ -10,6 +10,16 @@
 }
 
 @font-face {
+  font-family: 'slick';
+  font-weight: 200;
+  src: url('../fonts/slick.eot');
+  src: url('../fonts/slick.eot') format('embedded-opentype'),
+       url('../fonts/slick.woff') format('woff'),
+       url('../fonts/slick.ttf') format('truetype'),
+       url('../fonts/slick.svg#slick') format('svg');
+}
+
+@font-face {
   font-family: 'Quicksand';
   font-weight: 200;
   src: url('../fonts/QuicksandLight.eot');
@@ -23,12 +33,12 @@
 @font-face {
   font-family: 'Quicksand';
   font-weight: 400;
-  src: url('../fonts/QuicksandMedium.eot');
-  src: url('../fonts/QuicksandMedium.eot') format('embedded-opentype'),
-       url('../fonts/QuicksandMedium.woff2') format('woff2'),
-       url('../fonts/QuicksandMedium.woff') format('woff'),
-       url('../fonts/QuicksandMedium.ttf') format('truetype'),
-       url('../fonts/QuicksandMedium.svg#QuicksandMedium') format('svg');
+  src: url('../fonts/QuicksandRegular.eot');
+  src: url('../fonts/QuicksandRegular.eot') format('embedded-opentype'),
+       url('../fonts/QuicksandRegular.woff2') format('woff2'),
+       url('../fonts/QuicksandRegular.woff') format('woff'),
+       url('../fonts/QuicksandRegular.ttf') format('truetype'),
+       url('../fonts/QuicksandRegular.svg#QuicksandRegular') format('svg');
 }
 
 @font-face {

@@ -1,0 +1,47 @@
+extends layout/main
+
+block bodyClass
+  - bodyClasses.push('signin-signup')
+
+block content
+  section.signin-signup-section
+    .container.clearfix
+      .section-title 
+        h2 Inicia sesión o regístrate
+      .form-container
+        form.signin-form
+          .section-title-box
+            h3 Clientes registrados
+          .form-description Disfruta que nosotros nos encargamos de que tus paquetes lleguen a su destin
+          .clearfix
+            .container-inputs
+              .form-container
+                input(id='user', placeholder='Usuario')
+                span.form-icon.icon-user
+              .form-container
+                input(type='password', id='password', placeholder='contraseña')
+                span.form-icon.icon-padlock
+          button.btn.btn-ghost.btn-send Iniciar Sesión
+
+        form.signup-form
+          .section-title-box
+            h3 Nuevos clientes
+          .form-description Rellena este formulario para que podamos darte de alta
+          .clearfix
+            .container-inputs
+              .form-container
+                input(id='user', placeholder='Usuario')
+                span.form-icon.icon-user
+              .form-container
+                input(id='lastname', placeholder='Apellido')
+                span.form-icon.icon-user
+              .form-container
+                input(id='telephone', placeholder='Teléfono')
+                span.form-icon.icon-phone
+              .form-container
+                input(type='email', id='email', placeholder='Email')
+                span.form-icon.icon-email
+              .form-container
+                input(type='password', id='password', placeholder='contraseña')
+                span.form-icon.icon-padlock
+          button.btn.btn-send Registrarme

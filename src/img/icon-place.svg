@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3993 -1101 18 69.65">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #c8d41b;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #c8d41b;
+      }
+
+      .cls-1 {
+        stroke-width: 0.15px;
+        font-size: 15px;
+        font-family: themify;
+      }
+
+      .cls-2 {
+        fill: #f7f7f7;
+        stroke-width: 1.5px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_560" data-name="Group 560" transform="translate(3970 -1412)">
+    <text id="_" data-name="" class="cls-1" transform="translate(23.5 379.5)"><tspan x="0" y="0"></tspan></text>
+    <g id="Ellipse_26" data-name="Ellipse 26" class="cls-2" transform="translate(23 311)">
+      <circle class="cls-4" cx="9" cy="9" r="9"/>
+      <circle class="cls-5" cx="9" cy="9" r="8.25"/>
+    </g>
+    <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 334)"/>
+    <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 345)"/>
+    <circle id="Ellipse_29" data-name="Ellipse 29" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 355)"/>
+  </g>
+</svg>

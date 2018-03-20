@@ -35,20 +35,26 @@
 .icon-note:before {
   content: "\e61d";
 }
+.icon-padlock:before {
+  content: "\e62b";
+}
 .icon-cross:before {
   content: "\e646";
 }
 .icon-arrow-up:before {
   content: "\e648";
 }
-.icon-arrow-left:before {
+.icon-arrow-right:before {
   content: "\e649";
 }
-.icon-arrow-right:before {
+.icon-arrow-left:before {
   content: "\e64a";
 }
 .icon-arrow-down:before {
   content: "\e64b";
+}
+.icon-check:before {
+  content: "\e64c";
 }
 .icon-van:before {
   content: "\e66d";

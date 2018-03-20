@@ -5,11 +5,16 @@
 @import 'base/fonts';
 @import 'base/icons';
 @import 'base/base';
+@import 'base/overlay';
+@import '../bower_components/slick-carousel/slick/slick.scss';
+@import '../bower_components/slick-carousel/slick/slick-theme.scss';
 
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/footer';
 
 @import 'pages/landing';
+@import 'pages/select-vehicle';
 @import 'pages/charging-data';
 @import 'pages/detail';
+@import 'pages/signin-signup';

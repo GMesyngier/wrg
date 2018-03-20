@@ -1,0 +1,21 @@
+extends layout/main
+
+block bodyClass
+  - bodyClasses.push('signin')
+
+block content
+  section.signin-signup-section
+    .container.clearfixa
+      form
+        .form-description Disfruta que nosotros nos encargamos de que tus paquetes lleguen a su destin
+        .clearfix
+          .container-inputs
+            .form-container
+              input(id='user', placeholder='Usuario')
+              span.form-icon.icon-user
+            .form-container
+              input(type='password', id='password', placeholder='contraseña')
+              span.form-icon.icon-padlock
+        button.btn.btn-ghost.btn-send Iniciar Sesión
+        p.or o
+        a.btn.btn-send(href="signup-mobile.html") Registrarme

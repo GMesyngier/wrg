@@ -1,0 +1,58 @@
+{
+  "f/500": {
+    "name": "F/500",
+    "value": "f/500",
+    "description": "2mts x 3mts 500kg",
+    "features": {
+      "capacity": "1 palet EU",
+      "wheel": "1,25m",
+      "weight-charge": "500kg",
+      "cubic-charge":"De 3 a 5m"
+    },
+    "price":"35€",
+    "image":"",
+    "icon":""
+  },
+  "f/1500": {
+    "name": "F/1500",
+    "value": "f/1500",
+    "description": "Máx 4mts x 5mts  900kg > 60km",
+    "features": {
+      "capacity": "1 palet EU",
+      "wheel": "1,25m",
+      "weight-charge": "500kg",
+      "cubic-charge":"De 3 a 5m"
+    },
+    "price":"45€",
+    "image":"",
+    "icon":""
+  },
+  "Carrozado": {
+    "name": "Carrozado",
+    "value": "Carrozado",
+    "description": "Máx 2mts x 3mts  500kg > 30km",
+    "features": {
+      "capacity": "1 palet EU",
+      "wheel": "1,25m",
+      "weight-charge": "500kg",
+      "cubic-charge":"De 3 a 5m"
+    },
+    "price":"65€",
+    "image":"",
+    "icon":""
+  },
+  "f/3500": {
+    "name": "F/3500",
+    "value": "f/3500",
+    "description": "2mts x 3mts 500kg ",
+    "features": {
+      "capacity": "1 palet EU",
+      "wheel": "1,25m",
+      "weight-charge": "500kg",
+      "cubic-charge":"De 3 a 5m"
+    },
+    "price":"95€",
+    "image":"",
+    "icon":""
+  }
+}

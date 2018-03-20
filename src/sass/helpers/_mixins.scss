@@ -30,6 +30,12 @@
 	box-sizing: $value;
 }
 
+@mixin transform ($value) {
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	transform: $value;
+}
+
 @mixin vertical-align {
 	position: absolute;
 	top: 50%;
@@ -58,7 +64,7 @@
 @mixin breakpoint ($point, $value:0) {
 
 	@if $point == "tablet" {
-		@media (min-width: 768px) { @content; }
+		@media (min-width: 960px) { @content; }
 	}
 
 	@else if $point == "desktop" {
