@@ -51,7 +51,9 @@ gulp.task('js', function () {
 
 gulp.task('pug', function() {
   gulp.src('./src/pages/*.pug')
-  .pipe(pug())
+  .pipe(pug({
+    pretty: true
+  }))
   .pipe(gulp.dest(configuration.paths.dist))
   .pipe(rename({
     extname: ".php"

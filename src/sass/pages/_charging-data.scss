@@ -1,0 +1,131 @@
+.charging-data-page {
+
+  // ----------- General
+
+  .charging-summary {
+    position: relative;
+  }
+
+  .charging-header {
+    position: position;
+    background: map-get($colors, grey-light)
+  }
+
+  .header-steps {
+    margin: 0 -20px;
+
+    .header-steps-item {
+      width: 25%;
+      float: left;
+
+      a {
+        font-family: 'Quicksand';
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: #BCBCBB;
+        border-bottom: 1px solid #BCBCBB;
+        padding: 10px 0;
+        margin: 0 0 40px;
+
+        &.current {
+          margin-top: -20px;
+          color: map-get($colors, green-light);
+          border-bottom: 1px solid map-get($colors, green-light);
+          pointer-events: none;
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  .charging-data-nav {
+    @include clearfix;
+    
+    a {
+      font-family: 'Quicksand';
+      width: 95px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: map-get($colors, green-light);
+      padding: 15px 0;
+      margin: 40px 0 0;
+      border-top: 1px solid map-get($colors, green-light);
+    }
+    
+    .prev {
+      float: left;
+      margin-left: -20px;
+    }
+
+    .next {
+      float: right;
+      margin-right: -20px;
+    }
+  }
+
+  // ----------- 01
+
+  .btn-vehicle {
+    font-family: 'Quicksand';
+    background-color: map-get($colors, green-light);
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    height: 150px;
+    cursor: pointer;
+
+    .btn-vehicle-column {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(2) {
+        background-color: map-get($colors, green-dark);
+      }
+    }
+
+    .icon-vehicle {
+      width: 55px; 
+      filter: brightness(0);
+      opacity: 0.4;
+    }
+
+    .vehicle-name {
+      border-top: 1px solid map-get($colors, green-dark);
+      color: map-get($colors, green-dark);
+      margin: 10px 0;
+      padding-top: 10px;
+      font-weight: 400;
+    }
+
+    .vehicle-details {
+      font-family: 'HelveticaNu';
+      font-weight: 2  00;
+      font-size: 13px;
+      color: map-get($colors, green-dark);
+      text-align: center;
+    }
+
+    .vehicle-price {
+      font-size: 45px;
+      font-weight: 400;
+      color: white;
+    }
+
+    .vehicle-action {
+      font-family: 'HelveticaNu';
+      font-weight: 600;
+      font-size: 13px;
+      color: map-get($colors, green-light);
+      letter-spacing: 1;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}

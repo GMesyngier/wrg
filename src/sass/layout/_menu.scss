@@ -14,6 +14,13 @@
     left: 0;
   }
 
+  .menu-container {
+    padding: 15px 20px;
+    margin: 0 auto;
+    max-width: 992px;
+    width: 100%;
+  }
+
   .menu-company-logo {
     width: 126px;
     display: inline-block;
@@ -60,6 +67,9 @@
           line-height: 1;
           font-size: 16px;
         }
+      }
+      &.contact {
+        display: none;
       }
     }
   }
@@ -134,7 +144,6 @@
     }
   }
 }
-
 
 body {
   left: 0;
