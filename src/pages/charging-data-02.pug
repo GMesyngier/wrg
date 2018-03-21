@@ -49,9 +49,21 @@ block content
     .container
       .charging-data-title.data-title-fixed
         h2 ¿Dónde recogemos la mercancía?
-    
-      
+        .btn-select-address.btn-overlay(data-overlay="overlay-select-from")
+          .icon.icon-house
+          span.from-address Seleccione una ubicación
+        .contact-people
+          span.item-name Contacto:
+          span.contact Nadie aún.
 
+        .btn-select-address.btn-overlay(data-overlay="overlay-select-to")
+          .icon.icon-box
+          span.to-address Seleccione una ubicación
+        .contact-people
+          span.item-name Contacto:
+          span.contact Nadie aún.
+
+      
       .charging-data-nav
         a.prev(href="charging-data-01.html") 
           span.icon-arrow-left
@@ -60,5 +72,10 @@ block content
           span 03
           span.icon-arrow-right
 
-    .overlay#overlay-vehicle
-      include select-vehicle
+    .overlay#overlay-select-from
+      include select-address-from
+    .overlay#overlay-select-to
+      include select-address-to
+
+block js
+  script(src="./js/maps.js")

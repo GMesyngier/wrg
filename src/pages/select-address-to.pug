@@ -1,0 +1,29 @@
+.select-address-to
+  form.address-to-form
+    .container
+      .charging-data-title
+        h2 ¿Dónde dejamos la mercancía?
+      .form-container
+        span.form-icon.icon-box
+        input(id="pac-input1", class="map-control", type="text", placeholder="Buscar sitio")
+      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
+        span.icon-arrow-down 
+        | Direcciones frecuentes 
+
+    #map-canvas1(style="height:160px;")
+
+    .container
+      .charging-data-title
+        h2 Persona de contacto
+      
+      .container-contact.clearfix
+        .form-container
+          input(id='name', placeholder='Nombre')
+          span.form-icon.icon-user
+        .form-container
+          input(id='telephone', placeholder='Teléfono')
+          span.form-icon.icon-phone
+
+      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
+        span.icon-arrow-down 
+        | Personas frecuentes 

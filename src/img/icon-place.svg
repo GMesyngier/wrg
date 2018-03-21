@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="3993 -1101 18 69.65">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3993 -1101 18 69.576">
   <defs>
     <style>
       .cls-1, .cls-3 {
@@ -11,8 +11,6 @@
 
       .cls-1 {
         stroke-width: 0.15px;
-        font-size: 15px;
-        font-family: themify;
       }
 
       .cls-2 {
@@ -30,7 +28,7 @@
     </style>
   </defs>
   <g id="Group_560" data-name="Group 560" transform="translate(3970 -1412)">
-    <text id="_" data-name="" class="cls-1" transform="translate(23.5 379.5)"><tspan x="0" y="0"></tspan></text>
+    <path id="Path_455" data-name="Path 455" class="cls-1" d="M7.529-14.092,0-11.25v9.434L7.5,1,15-1.816V-11.25ZM13.3-10.957l-2.285.85L5.244-12.275,7.5-13.154ZM7.5-8.76l-5.8-2.2,2.285-.85,5.8,2.168ZM.879-10.312,7.061-8V-.117L.879-2.432ZM7.939-.117V-8l6.182-2.314v7.881Z" transform="translate(23.5 379.5)"/>
     <g id="Ellipse_26" data-name="Ellipse 26" class="cls-2" transform="translate(23 311)">
       <circle class="cls-4" cx="9" cy="9" r="9"/>
       <circle class="cls-5" cx="9" cy="9" r="8.25"/>
