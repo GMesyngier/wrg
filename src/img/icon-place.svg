@@ -1,40 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="3993 -1101 18 69.576">
-  <defs>
-    <style>
-      .cls-1, .cls-3 {
-        fill: #c8d41b;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #c8d41b;
-      }
-
-      .cls-1 {
-        stroke-width: 0.15px;
-      }
-
-      .cls-2 {
-        fill: #f7f7f7;
-        stroke-width: 1.5px;
-      }
-
-      .cls-4 {
-        stroke: none;
-      }
-
-      .cls-5 {
-        fill: none;
-      }
-    </style>
-  </defs>
-  <g id="Group_560" data-name="Group 560" transform="translate(3970 -1412)">
-    <path id="Path_455" data-name="Path 455" class="cls-1" d="M7.529-14.092,0-11.25v9.434L7.5,1,15-1.816V-11.25ZM13.3-10.957l-2.285.85L5.244-12.275,7.5-13.154ZM7.5-8.76l-5.8-2.2,2.285-.85,5.8,2.168ZM.879-10.312,7.061-8V-.117L.879-2.432ZM7.939-.117V-8l6.182-2.314v7.881Z" transform="translate(23.5 379.5)"/>
-    <g id="Ellipse_26" data-name="Ellipse 26" class="cls-2" transform="translate(23 311)">
-      <circle class="cls-4" cx="9" cy="9" r="9"/>
-      <circle class="cls-5" cx="9" cy="9" r="8.25"/>
-    </g>
-    <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 334)"/>
-    <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 345)"/>
-    <circle id="Ellipse_29" data-name="Ellipse 29" class="cls-3" cx="2.391" cy="2.391" r="2.391" transform="translate(29.609 355)"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 69.6" style="enable-background:new 0 0 18 69.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C8D41B;stroke:#C8D41B;stroke-width:0.15;}
+	.st1{fill:none;stroke:#C8D41B;stroke-width:1.5;}
+	.st2{fill:#C8D41B;}
+</style>
+<g id="Group_560" transform="translate(3970 -1412)">
+	<path id="Path_455" class="st0" d="M-3962,1466.4l-7.5,2.8v9.4l7.5,2.8l7.5-2.8v-9.4L-3962,1466.4z M-3956.2,1469.5l-2.3,0.8
+		l-5.8-2.2l2.3-0.9L-3956.2,1469.5z M-3962,1471.7l-5.8-2.2l2.3-0.9l5.8,2.2L-3962,1471.7z M-3968.6,1470.2l6.2,2.3v7.9l-6.2-2.3
+		V1470.2z M-3961.6,1480.4v-7.9l6.2-2.3v7.9L-3961.6,1480.4z"/>
+	<g id="Ellipse_26" transform="translate(23 311)">
+		<circle class="st1" cx="-3984" cy="1110" r="8.2"/>
+	</g>
+	<circle id="Ellipse_27" class="st2" cx="-3961" cy="1437.4" r="2.4"/>
+	<circle id="Ellipse_28" class="st2" cx="-3961" cy="1448.4" r="2.4"/>
+	<circle id="Ellipse_29" class="st2" cx="-3961" cy="1458.4" r="2.4"/>
+</g>
 </svg>
