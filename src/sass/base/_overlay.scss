@@ -17,7 +17,7 @@
 
   &.overlay-opened {
     opacity: 1;
-
+    overflow-y: auto;
     pointer-events: all;
   }
 
@@ -27,5 +27,13 @@
     top: 25px;
     right: 25px;
     cursor: pointer;
+  }
+
+  .charging-data-title {
+    text-align: left;
+
+    @include breakpoint('tablet') {
+      text-align: center;
+    }
   }
 }

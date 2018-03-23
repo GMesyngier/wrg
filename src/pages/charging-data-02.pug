@@ -24,7 +24,7 @@ block content
             span.model F500
           a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
             | Ver Resumen 
-            span.icon-arrow-down
+            span.icon.icon-arrow-down
 
         ul.summary-details.dropdown#summary-dropdown
           li.detail.detail-vehicle
@@ -49,19 +49,19 @@ block content
     .container
       .charging-data-title.data-title-fixed
         h2 ¿Dónde recogemos la mercancía?
-        .btn-select-address.btn-overlay(data-overlay="overlay-select-from")
+        .btn-select.btn-overlay(data-overlay="overlay-select-from")
           .icon.icon-house
           span.from-address Seleccione una ubicación
         .contact-people
           span.item-name Contacto:
-          span.contact Nadie aún.
+          span.from-contact Nadie aún.
 
-        .btn-select-address.btn-overlay(data-overlay="overlay-select-to")
+        .btn-select.btn-overlay(data-overlay="overlay-select-to")
           .icon.icon-box
           span.to-address Seleccione una ubicación
         .contact-people
           span.item-name Contacto:
-          span.contact Nadie aún.
+          span.to-contact Nadie aún.
 
       
       .charging-data-nav
@@ -78,4 +78,9 @@ block content
       include select-address-to
 
 block js
+  script(src="./js/menu.js")
+  script(src="./js/dropdown.js")
+  script(src="./js/overlay.js")
+  script(src="./js/address.js")
+  script(src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCku4v2la7HjsiNn3FqCNtuhm3xnYcocLw")
   script(src="./js/maps.js")

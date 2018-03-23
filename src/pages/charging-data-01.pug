@@ -24,7 +24,7 @@ block content
             span.model F500
           a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
             | Ver Resumen 
-            span.icon-arrow-down
+            span.icon.icon-arrow-down
 
         ul.summary-details.dropdown#summary-dropdown
           li.detail.detail-vehicle
@@ -60,10 +60,17 @@ block content
           .vehicle-price 35€
           .vehicle-action CAMBIAR<br>VEHÍCULO
 
-      .charging-data-nav
-        a.next(href="charging-data-02.html")
-          span 02
-          span.icon-arrow-right
+    .charging-data-nav
+      a.next(href="charging-data-02.html")
+        span 02
+        span.icon-arrow-right
 
     .overlay#overlay-vehicle
       include select-vehicle
+
+block js
+  script(src="./js/menu.js")
+  script(src="./js/dropdown.js")
+  script(src="./js/overlay.js")
+  script(src="./bower_components/slick-carousel/slick/slick.min.js")
+  script(src="./js/slider-vehicle.js")

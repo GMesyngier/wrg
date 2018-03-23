@@ -90,8 +90,7 @@ block content
     img.where-map.mobile-map(src='./img/map-mobile@2x.png', alt='Donde estamos')
   
     .container
-
-      .where-description-container
+      .where-description-container.clearfix
         .line
         .description-item
           .country Madrid
@@ -130,3 +129,9 @@ block content
 
   .overlay#overlay-vehicle
     include select-vehicle
+
+block js
+  script(src="./js/menu.js")
+  script(src="./bower_components/slick-carousel/slick/slick.min.js")
+  script(src="./js/overlay.js")
+  script(src="./js/slider-vehicle.js")

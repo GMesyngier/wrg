@@ -167,6 +167,62 @@ b, strong {
   } 
 }
 
+.btn-select{
+  position: relative;
+  margin-top: 15px;
+  padding: 25px 20px 25px 55px;
+  color: map-get($colors, grey-dark);
+  border: 1px solid map-get($colors, grey-dark);
+  cursor: pointer;
+  min-height: 68px;
+
+  .icon {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    font-size: 20px;
+    color: map-get($colors, grey-dark);
+    transition: color .3s ease-in-out;
+  }
+}
+
+.btn-check {
+  background: map-get($colors, green-light);
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:before {
+    font-family: 'icomoon';
+    display: block;
+    content: "\e64c";
+    line-height: 2;
+    color: white;
+    font-size: 24px;
+  }
+
+  @include breakpoint('tablet') {
+    background: transparent;
+    border-radius: 30px; 
+    border: 1px solid map-get($colors, green-light);
+    width: 250px;
+    height: auto;
+
+    &:before { 
+      font-family: 'Quicksand';
+      content: 'Hecho!';
+      font-weight: 400;
+      font-size: 16px;
+      color: map-get($colors, green-light);
+      line-height: 3.5;
+    }
+  }
+}
+
 
 input, textarea {
   font-size: 16px;

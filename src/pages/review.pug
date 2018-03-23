@@ -1,0 +1,56 @@
+extends layout/main
+
+block bodyClass
+  - bodyClasses.push('review-page')
+
+block content
+  section.review-section
+    .container
+      .review-title
+        h2 ¡Reserva realizada!
+        .description Aquí tienes el resumen de tu compra, en breve te asignaremos un conductor.
+
+      .container-review 
+        .row.clearfix
+          .column-review.vehicle-model
+            img.icon-vehicle(src='./img/icon-van-00.svg', alt='Van')
+            span.vehicle-name F/500
+
+          .column-review.vehicle-details
+            ul.list-vehicle-detail
+              li.item-detail
+                span.feature Dimension:
+                span.value 2mts x 3mts 
+              li.item-detail
+                span.feature Peso máx:
+                span.value 500kg
+              li.item-detail
+                span.feature Recorrido máx:
+                span.value 56km
+        .row
+          .address.clearfix
+            img.icon-place(src='./img/icon-place.svg', alt='Van')
+            .from Carrer de Pere IV, 51, 08018
+            .to Avenida Meridiana, 131, 08028
+
+        .row.clearfix
+          .column-review.date.separator
+            span.icon.icon-calendar
+            span.value 17/03/2018
+          .column-review.time.separator
+            span.icon.icon-clock
+            span.value 11:15
+        .row.clearfix
+          .column-review.contact.separator
+            span.icon.icon-user
+            span.value Andrea
+          .column-review.telephone.separator
+            span.icon.icon-phone
+            span.value 620895989
+      
+      .container-buttons
+        a.btn.btn-ghost.btn-print(href="#") Imprimir
+        a.btn.btn-return(href="landing.html") Volver
+
+block js
+  script(src="./js/menu.js")

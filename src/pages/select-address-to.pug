@@ -1,3 +1,4 @@
+a.icon-cross.close-overlay(onclick="saveAddressTo(); closeOverlay(this);")
 .select-address-to
   form.address-to-form
     .container
@@ -9,6 +10,15 @@
       a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
         span.icon-arrow-down 
         | Direcciones frecuentes 
+      ul.recent-address.dropdown#recent-address-dropdown
+        li.item-Address
+          a(href="#") Address 1
+        li.item-address
+          a(href="#") Address 2
+        li.item-address
+          a(href="#") Address 3
+        li.item-address
+          a(href="#") Address 4
 
     #map-canvas1(style="height:160px;")
 
@@ -18,12 +28,24 @@
       
       .container-contact.clearfix
         .form-container
-          input(id='name', placeholder='Nombre')
+          input.name(id='name', placeholder='Nombre')
           span.form-icon.icon-user
         .form-container
-          input(id='telephone', placeholder='Teléfono')
+          input.telephone(type="number", id='telephone', placeholder='Teléfono')
           span.form-icon.icon-phone
 
-      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
+      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-person-dropdown")
         span.icon-arrow-down 
         | Personas frecuentes 
+      
+      ul.recent-persons.dropdown#recent-person-dropdown
+        li.item-person
+          a(href="#") Person 1
+        li.item-person
+          a(href="#") Person 2
+        li.item-person
+          a(href="#") Person 3
+        li.item-person
+          a(href="#") Person 4
+      
+span.btn-check(onclick="saveAddressTo(); closeOverlay(this);")

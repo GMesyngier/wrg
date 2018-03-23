@@ -1,0 +1,110 @@
+.bootstrap-datetimepicker-widget {
+
+  .btn {
+    background: transparent;
+
+    span {
+      font-size: 28px;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+
+    .icon {
+      color: map-get($colors, green-light );
+      border: none;
+    }
+
+    &.btn-primary {
+      color: map-get($colors, green-light );
+      font-weight: 400 !important;
+      border: none !important;
+      border-radius: 0 !important;
+
+      &:hover {
+        background-color:  none;
+      }
+    }
+  }
+}
+
+// Date
+.bootstrap-datetimepicker-widget table th {
+  line-height: 38px !important;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  line-height: 38px !important;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child  {
+  color: map-get($colors, green-light );
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+  background: transparent !important;
+}
+
+.bootstrap-datetimepicker-widget table td.active {
+  background: map-get($colors, green-light) !important; 
+  text-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.bootstrap-datetimepicker-widget table td.active:hover {
+  color: map-get($colors, green-light) !important;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before { 
+  display: none !important;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background: map-get($colors, grey-light) !important;
+}
+
+.bootstrap-datetimepicker-widget table td span {
+  font-family: 'Quicksand';
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: map-get($colors, green-light) !important;
+  color: #fff;  
+  text-shadow: none !important;
+  border-bottom: 1px solid map-get($colors, green-light );
+}
+
+.bootstrap-datetimepicker-widget .timepicker-picker table td span {
+  font-family: 'Quicksand';
+  font-weight: 400 !important;
+  font-size: 22px !important;
+  border-bottom: 1px solid map-get($colors, green-light );
+  border-radius: 0 !important;
+}
+
+.bootstrap-datetimepicker-widget table td span:hover {
+  background: map-get($colors, grey-light) !important;
+}
+
+.form-control {
+   display: block;
+   height: auto !important; 
+   padding: auto !important; 
+   font-size: auto !important; 
+   line-height: auto !important; 
+   color: auto !important; 
+   background-color: auto !important; 
+   background-image: auto !important; 
+   border: 1px solid map-get($colors, grey-dark) !important;
+   border-radius: 0 !important; 
+   -webkit-box-shadow: auto !important; 
+   box-shadow: auto !important; 
+   -webkit-transition: auto !important; 
+  -o-transition: auto !important;
+   transition: auto !important; 
+}

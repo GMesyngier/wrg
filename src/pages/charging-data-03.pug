@@ -24,7 +24,7 @@ block content
             span.model F500
           a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
             | Ver Resumen 
-            span.icon-arrow-down
+            span.icon.icon-arrow-down
 
         ul.summary-details.dropdown#summary-dropdown
           li.detail.detail-vehicle
@@ -49,16 +49,35 @@ block content
     .container
       .charging-data-title.data-title-fixed
         h2 ¿Qué día recogemos el envío?
-    
+      .btn-select.btn-select-date.btn-overlay(data-overlay="overlay-date")
+        .icon.icon-calendar
+        span.date Fecha
       
+      .charging-data-title
+        h2 A que hora recogemos el envío?
+      .btn-select.btn-select-time.btn-overlay(data-overlay="overlay-date")
+        .icon.icon-clock
+        span.time hora
 
-      .charging-data-nav
-        a.prev(href="charging-data-02.html") 
-          span.icon-arrow-left
-          span  02
-        a.next(href="charging-data-04.html")
-          span 04
-          span.icon-arrow-right
+    .charging-data-nav
+      a.prev(href="charging-data-02.html") 
+        span.icon-arrow-left
+        span  02
+      a.next(href="charging-data-04.html")
+        span 04
+        span.icon-arrow-right
+    
+    .overlay#overlay-date
+      include select-date
 
-    .overlay#overlay-vehicle
-      include select-vehicle
+block js
+  script(src="./js/menu.js")
+  script(src="./js/overlay.js")
+  script(src="./js/dropdown.js")
+  script(src="./js/date-picker.js")
+  script(src="./bower_components/moment/moment.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+  script(src="./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js")
+  script(src="./js/date-picker.js")
+  link(rel="stylesheet", href="./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css")
+

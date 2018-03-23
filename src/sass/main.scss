@@ -7,6 +7,7 @@
 @import 'base/base';
 @import 'base/overlay';
 @import 'base/dropdown';
+@import 'base/datepicker';
 @import '../bower_components/slick-carousel/slick/slick.scss';
 @import '../bower_components/slick-carousel/slick/slick-theme.scss';
 
@@ -19,3 +20,4 @@
 @import 'pages/charging-data';
 @import 'pages/detail';
 @import 'pages/signin-signup';
+@import 'pages/review';

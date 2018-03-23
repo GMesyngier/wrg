@@ -1,3 +1,4 @@
+a.icon-cross.close-overlay(onclick="saveAddressFrom();closeOverlay(this);")
 .select-address-from
   .address-from-form
     .container
@@ -6,9 +7,18 @@
       .form-container
         span.form-icon.icon-house
         input(id="pac-input", class="map-control", type="text", placeholder="Buscar sitio")
-      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
-        span.icon-arrow-down 
+      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown1")
+        span.icon.icon-arrow-down 
         | Direcciones frecuentes 
+      ul.recent-address.dropdown#recent-address-dropdown1
+        li.item-Address
+          a(href="#") Address 1
+        li.item-address
+          a(href="#") Address 2
+        li.item-address
+          a(href="#") Address 3
+        li.item-address
+          a(href="#") Address 4
     #map-canvas(style="height:160px;")
     .container
       .charging-data-title
@@ -16,12 +26,24 @@
       
       .container-contact.clearfix
         .form-container
-          input(id='name', placeholder='Nombre')
+          input.name(id='name', placeholder='Nombre')
           span.form-icon.icon-user
         .form-container
-          input(id='telephone', placeholder='Teléfono')
+          input.telephone(type="number", id='telephone', placeholder='Teléfono')
           span.form-icon.icon-phone
 
-      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-address-dropdown")
-        span.icon-arrow-down 
-        | Personas frecuentes 
+      a.btn-recurrent.btn-dropdown(href="#", data-dropdown="recent-person-dropdown1")
+        span.icon.icon-arrow-down 
+        | Personas frecuentes
+      
+      ul.recent-persons.dropdown#recent-person-dropdown1
+        li.item-person
+          a(href="#") Person 1
+        li.item-person
+          a(href="#") Person 2
+        li.item-person
+          a(href="#") Person 3
+        li.item-person
+          a(href="#") Person 4
+        
+span.btn-check(onclick="saveAddressFrom();closeOverlay(this);")

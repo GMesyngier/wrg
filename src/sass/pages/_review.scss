@@ -1,0 +1,121 @@
+.review-page {
+
+  .review-title {
+    text-align: center;
+
+    h2 {
+      color: map-get($colors, green-light);
+      margin-top: 25px;
+    }
+
+    .description {
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+  }
+
+  .container-review {
+    width: 100%;
+    max-width: 465px;
+    border: 1px solid map-get($colors, grey-dark);
+    margin: 50px auto;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 16px;
+
+    .column-review {
+      padding: 30px;
+      float: left;
+      width: 50%;
+      
+      &.separator {
+        border-right: 1px solid map-get($colors, grey-dark);
+        
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      &.vehicle-details {
+        padding-left: 10px;
+        font-size: 11px;
+      }
+    }
+
+    .row {
+      border-bottom: 1px solid map-get($colors, grey-dark);
+        
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .address {
+      padding: 35px;
+    }
+
+    .vehicle-model {
+      margin-top: 26px;
+     }
+    
+     .icon-vehicle {
+        width: 80px;
+        display: inline;
+        vertical-align: middle;
+        padding-right: 15px;
+        padding-bottom: 8px;
+    }
+
+    .vehicle-name {
+      font-weight: 400;
+      font-size: 18px; 
+    }
+
+    .icon-place {
+      width: 14px;
+    }
+
+    .icon {
+      color: map-get($colors, green-light);
+      padding-right: 10px;
+    }
+  }
+
+  .list-vehicle-detail {
+
+    .item-detail {
+      margin: 10px 0;
+      line-height: 1.5;
+
+      .feature {
+        padding-right: 5px;
+      }
+    }
+  }
+
+
+  .container-buttons {
+    max-width: 250px;
+    margin: 0 auto;
+
+    .btn {
+      margin-top: 15px;
+    }
+  }
+
+  .address {
+    position: relative;
+
+    .from {
+      position: absolute;
+      top: 33px;
+      left: 60px;
+    }
+
+    .to {
+      position: absolute;
+      top: 75px;
+      left: 60px;
+    }
+  }
+}

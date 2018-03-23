@@ -240,33 +240,19 @@
     height: 100%;
   }
 
-  .btn-select-address{
-    position: relative;
-    margin-top: 15px;
-    padding: 25px 20px 25px 55px;
-    color: map-get($colors, green-dark);
-    background: map-get($colors, green-light);
-    cursor: pointer;
-
-    .icon {
-      position: absolute;
-      top: 22px;
-      left: 25px;
-      font-size: 20px;
-      color: map-get($colors, grey-dark);
-      transition: color .3s ease-in-out;
-    }
-  }
-
   .contact-people {
     margin: 15px 0 30px;
     font-size: 15px;
     font-weight: 600;
     color: map-get($colors, green-dark);
 
-    .contact{
+    .contact {
       padding-left: 10px;
     }
+    span:last-child {
+      padding-left: 10px;
+    }
+
   }
 
   .btn-recurrent {
@@ -276,6 +262,17 @@
     color: map-get($colors, green-dark);
     display: block;
     text-decoration: none;
+  }
+
+  .recent-address, .recent-persons {
+    a {
+      padding-left: 35px;
+      padding-bottom: 20px;
+      display: block;
+      text-decoration: none;
+      color: map-get($colors, grey-dark);
+      font-size: 14px;
+    }
   }
 
   .container-contact {
@@ -289,6 +286,74 @@
       }
       &:last-child {
         padding-left: 5px;
+      }
+    }
+  }
+
+
+  // ----------- 03
+
+  .date-container, .time-container {
+    max-width: 320px;
+  }
+
+  .date-container {
+    margin: 30px auto 50px;
+  }
+
+  .time-container {
+    margin: 0px auto 50px;
+  }
+
+
+  // ----------- 04
+
+  .special-needs {
+
+    .special-list {
+
+      .item-special {
+        padding: 25px 0;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        
+
+        &:last-child {
+          border: none;
+        }
+
+        .icon {
+          @include transition(color 0.3s ease-in-out, transform 0.3s ease-in-out);
+          display: inline-block;
+        }
+
+        .description {
+          @include transition(color 0.3s ease-in-out);
+          padding-left: 25px;
+        }
+
+        &.current {
+
+
+          .icon {
+            color: map-get($colors, green-light);
+            @include transform(rotate(90deg));
+          }
+
+          .description {
+            color: map-get($colors, green-light);
+          }
+        }
+      }
+    }
+
+    .phone {
+      margin: 30px auto;
+      text-align: center;
+
+      .image-phone {
+        width: 45px;
+        vertical-align: middle;
       }
     }
   }

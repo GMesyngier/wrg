@@ -453,7 +453,7 @@
     .description-item {
       width: 50%;
       padding: 0 25px;
-      display: inline-block;
+      float: left;
 
       @include breakpoint('tablet') {
         padding: 0 85px;
