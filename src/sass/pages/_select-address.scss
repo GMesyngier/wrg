@@ -14,6 +14,12 @@
   }
 }
 
+#map-canvas, #map-canvas1 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .map-container {
   height: 160px;
 
