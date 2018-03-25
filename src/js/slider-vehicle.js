@@ -1,8 +1,16 @@
 $('.select-vehicle-slider').slick({
   centerMode: true,
-  centerPadding: '40px',
+  centerPadding: '0',
   slidesToShow: 1,
-  asNavFor: '.select-vehicle-slider-nav'
+  asNavFor: '.select-vehicle-slider-nav',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        centerPadding: '40px',
+      }
+    }
+  ]
 });
 
 $('.select-vehicle-slider-nav').slick({

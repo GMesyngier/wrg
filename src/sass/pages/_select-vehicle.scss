@@ -1,5 +1,22 @@
 .select-vehicle-slider {
   text-align: center;
+  padding: 0;
+
+  @include breakpoint('desktop') {
+    text-align: left;
+    padding: 50px 0;
+  }
+
+  .instruction {
+    color: #ccc;
+    text-align: center;
+    margin: 60px 0 0;
+    display: none;
+    
+    @include breakpoint('desktop') {
+      display: block;
+    }
+  }
 
   .item-option {
     position: relative;
@@ -10,6 +27,11 @@
       height: 100%;
       width: 94%;
       left: 0;
+
+      @include breakpoint('desktop') {
+        width: 100%;
+      }
+      
       &:checked + label {
 
         .image-vehicle {
@@ -31,6 +53,10 @@
     color: map-get($colors, green-dark);
     font-size: 30px;
     font-weight: 400;
+
+    @include breakpoint('desktop') {
+
+    }
   }
 
   .vehicle-description {
@@ -47,6 +73,12 @@
     position: relative;
     @include transition(border-color 0.3s ease-in-out);
 
+    @include breakpoint('desktop') {
+      margin: 25px auto 0;
+      background: white;
+      width: 100%;
+    }
+
     .icon-check {
       position: absolute;
       top: 15px;
@@ -60,9 +92,18 @@
     .picture {
       @include vertical-align;
       width: 80%;
+      margin: 0;
+
+      @include breakpoint('desktop') {
+        position: relative;
+        top: 15px;
+        transform: none;
+        margin: 0 auto;
+      }
     }
 
     .price {
+      text-align: center;
       font-size: 30px;
       color: white;
       height: 85px;
@@ -71,10 +112,17 @@
       background: grey;
       position: absolute;
       bottom: -42.5px;
+      top: auto;
       left: 50%;
       line-height: 2.7;
       @include transition(background-color 0.3s ease-in-out);
       @include transform(translateX(-50%));
+
+      @include breakpoint('desktop') {
+        top: 15px;
+        bottom: auto;
+        left: 60px;
+      }
 
     }
   }
@@ -82,11 +130,26 @@
   .vehicle-features {
     width: 300px;
     margin: 35px auto 0;
+    padding: 0;
+    background: transparent;
+
+    @include breakpoint('desktop') {
+      margin: 0;
+      padding: 25px 0;
+      width: 100%;
+      background: map-get($colors, green-dark);
+    }
     
     .feature-item {
       width: 50%;
       float: left;
       margin: 10px 0 0;
+      text-align: center;
+
+      @include breakpoint('desktop') {
+        margin: 0;
+        width: 25%;
+      }
       
       .item-title {
         color: map-get($colors, green-dark);
@@ -94,11 +157,20 @@
         font-size: 12px;
         font-weight: 600;
         line-height: 2.5;
+
+        @include breakpoint('desktop') {
+          color: white;
+        }
       }
       
       .item-description {
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 200;  
+        color: map-get($colors, grey-dark);
+
+        @include breakpoint('desktop') {
+          color: white;
+        }
       }
     }
   }
@@ -112,6 +184,10 @@
   bottom: 15px;
   left: 50%;
   @include transform(translateX(-50%));
+
+  @include breakpoint('desktop') {
+    bottom: 100px;
+  }
 
   .slick-track {
     @include transform(translate3d(0px, 0px, 0px) !important);

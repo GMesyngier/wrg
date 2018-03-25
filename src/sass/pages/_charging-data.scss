@@ -41,6 +41,10 @@
   .header-steps {
     margin: 0 -20px;
 
+    @include breakpoint('desktop') {
+      margin: 20px -20px 0;
+    }
+
     .header-steps-item {
       width: 25%;
       float: left;
