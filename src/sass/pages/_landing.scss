@@ -24,7 +24,7 @@
     }
 
     h1 {
-      width: 265px;
+      width: 270px;
       text-align: center;
       margin: 0 auto;
 
@@ -50,15 +50,10 @@
         margin: 20px 0;
         float: right;
       }
+    }
 
-      input:not(:placeholder-shown) {
-        background: map-get($colors, green-light);
-        color: map-get($colors, green-dark);
-
-        +span { 
-          color: map-get($colors, green-dark);
-        }
-      }
+    .contact-people {
+      display: none;
     }
 
     .vehicle {

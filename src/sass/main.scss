@@ -14,9 +14,11 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/footer';
+@import 'layout/charging-summary';
 
 @import 'pages/landing';
 @import 'pages/select-vehicle';
+@import 'pages/select-address';
 @import 'pages/charging-data';
 @import 'pages/detail';
 @import 'pages/signin-signup';

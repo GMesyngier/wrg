@@ -7,7 +7,7 @@
   right: auto;
   width: 100%;
 
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     background: transparent;
     position: relative;
     width: auto;
@@ -30,7 +30,7 @@
     border-bottom: 1px solid #ededed;
     display: block;
 
-    @include breakpoint('tablet') {
+    @include breakpoint('desktop') {
       display: none;
     }
   }
@@ -39,7 +39,7 @@
     float: none;
     margin: 15px 0 40px;
     
-    @include breakpoint('tablet') {
+    @include breakpoint('desktop') {
       margin: 0;
       float: right;
     }
@@ -48,7 +48,7 @@
       display: block;
       margin: 0;
 
-      @include breakpoint('tablet') {
+      @include breakpoint('desktop') {
         display: inline-block;
         margin-left: 35px;
         margin-top: -9px;
@@ -61,7 +61,7 @@
         font-size: 16px;
         display: block;
       
-        @include breakpoint('tablet') {
+        @include breakpoint('desktop') {
           color: white;
           padding: 0;
           line-height: 1;
@@ -81,7 +81,7 @@
   .menu-user {
     display: block;
 
-    @include breakpoint('tablet') {
+    @include breakpoint('desktop') {
       display: none;
     }
   }
@@ -107,7 +107,7 @@
     .item {
       margin-left: 20px;
 
-      @include breakpoint('tablet') {
+      @include breakpoint('desktop') {
         margin-left: 35px;
       }
     }
@@ -117,7 +117,7 @@
       display: inline-block;
       vertical-align: top;
 
-      @include breakpoint('tablet') {
+      @include breakpoint('desktop') {
         vertical-align: text-bottom;
       }
     }
@@ -129,7 +129,7 @@
       margin-top: -3px;
       display: inline-block;
       
-      @include breakpoint('tablet') {
+      @include breakpoint('desktop') {
         display: none;
       }
     }
@@ -137,7 +137,7 @@
     .login {
       display: none;
       
-      @include breakpoint('tablet') {
+      @include breakpoint('desktop') {
         display: inline-block;
       }
 
@@ -153,7 +153,7 @@ body {
     left: 100%;
     overflow: hidden;
 
-    @include breakpoint('tablet') {
+    @include breakpoint('desktop') {
       left: 0;
     }
   }

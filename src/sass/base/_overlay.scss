@@ -31,9 +31,14 @@
 
   .charging-data-title {
     text-align: left;
-
-    @include breakpoint('tablet') {
-      text-align: center;
-    }
+    h2 {
+      font-family: 'Quicksand';
+      font-weight: 400;    
+    } 
   }
+}
+
+.overlay-container {
+  max-width: 540px;
+  margin: 0 auto;
 }

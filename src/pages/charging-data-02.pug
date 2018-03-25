@@ -16,53 +16,32 @@ block content
         li.header-steps-item
           a(href="charging-data-04.html") 04
 
-      .charging-summary
-        .summary-menu.clearfix
-          .summary-price-model
-            span.price 35€
-            span /
-            span.model F500
-          a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
-            | Ver Resumen 
-            span.icon.icon-arrow-down
-
-        ul.summary-details.dropdown#summary-dropdown
-          li.detail.detail-vehicle
-            img.icon-vehicle(src='./img/icon-van-00.svg', alt='Van')
-            | F/500
-          li.detail.detail-place
-            img.icon-place(src='./img/icon-place.svg', alt='Van')
-            .from Carrer de Pere IV, 51, 08018
-            .to Avenida Meridiana, 131, 08028
-          li.detail.detail-contact
-            span.icon.icon-user
-            | Andrea
-          li.detail.detail-time.clearfix
-            .date
-              span.icon.icon-calendar
-              | 17/03/2018
-            .hour
-              span.icon.icon-clock
-              | 11:15
-
+      include charging-summary
+    
+    .data-title-desktop
+      .container
+        h2 ¿Dónde tenemos que ir?
+      
   section.charging-data
-    .container
-      .charging-data-title.data-title-fixed
-        h2 ¿Dónde recogemos la mercancía?
-        .btn-select.btn-overlay(data-overlay="overlay-select-from")
-          .icon.icon-house
-          span.from-address Seleccione una ubicación
-        .contact-people
+    .container.container-charging-data
+      .charging-data-content
+        .charging-data-title
+          h2 ¿Dónde recogemos la mercancía?
+        .form-container.input-complete-check
+          input.btn-overlay(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
+          span.form-icon.icon-house
+        .contact-people.from
           span.item-name Contacto:
-          span.from-contact Nadie aún.
-
-        .btn-select.btn-overlay(data-overlay="overlay-select-to")
-          .icon.icon-box
-          span.to-address Seleccione una ubicación
-        .contact-people
+          span.item-contact Nadie aún.
+          
+        .charging-data-title
+          h2 ¿Dónde enviamos la mercancía?
+        .form-container.input-complete-check
+          input.btn-overlay(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde recogemos tu envío', required)
+          span.form-icon.icon-box
+        .contact-people.to
           span.item-name Contacto:
-          span.to-contact Nadie aún.
-
+          span.item-contact Nadie aún.
       
       .charging-data-nav
         a.prev(href="charging-data-01.html") 
@@ -79,8 +58,8 @@ block content
 
 block js
   script(src="./js/menu.js")
-  script(src="./js/dropdown.js")
   script(src="./js/overlay.js")
+  script(src="./js/dropdown.js")
   script(src="./js/address.js")
   script(src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCku4v2la7HjsiNn3FqCNtuhm3xnYcocLw")
   script(src="./js/maps.js")

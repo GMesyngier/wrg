@@ -7,6 +7,36 @@
     position: position;
     background: map-get($colors, grey-light);
   }
+  .data-title-desktop {
+    display: none;
+    color: white;
+    background: map-get($colors, green-light);
+    
+    .container {
+      padding: 15px 0;
+    } 
+
+    h2 {
+      font-family: 'Quicksand';
+      font-weight: 600;
+    }
+
+    @include breakpoint('desktop') {
+      display: block;
+    }
+
+  }
+
+  .charging-data-content {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+
+    @include breakpoint('desktop') {
+      max-width: 565px;
+      min-height: 565px;
+    }
+  }
 
   .header-steps {
     margin: 0 -20px;
@@ -34,108 +64,6 @@
           cursor: default;
         }
       }
-    }
-  }
-
-  .charging-summary {
-    position: relative;
-  }
-
-  .summary-menu {
-    color: map-get($colors, green-dark);
-    margin-bottom: 8px;
-
-    .summary-price-model {
-      float: left;
-
-      .price {
-        font-size: 30px;
-        font-weight: 400;
-      }
-    }
-
-    .btn-summary {
-      float: right;
-      padding-top: 10px;
-      font-size: 12px;
-      text-transform: uppercase;
-      font-family: 'Quicksand';
-      font-weight: 600;
-    }
-
-    a {
-      text-decoration: none;
-      color: map-get($colors, green-dark);
-    }
-  }
-
-  .summary-details {
-    
-    .detail {
-      padding: 25px 0;
-
-      &.detail-place {
-        position: relative;
-        border-top: 1px solid map-get($colors, green-light);
-
-        .from {
-          position: absolute;
-          left: 35px;
-          top: 26px;
-        }
-
-        .to {
-          position: absolute;
-          left: 35px;
-          top: 80px;
-        }
-      }
-
-      &.detail-contact {
-        padding-top: 0;
-        border-bottom: 1px solid map-get($colors, green-light);
-      }
-
-      &.detail-time {
-        
-        .date {
-          float: left;
-          width: 50%;
-        }
-
-        .hour {
-          float: left;
-          width: 50%;
-        }
-      }
-    }
-
-    .icon-vehicle {
-      width: 55px;  
-      margin-right: 15px;
-  
-    }
-
-    .icon-place {
-      width: 18px;
-    }
-
-    .icon {
-      font-size: 20px;
-      color: map-get($colors, green-light);
-      padding-right: 16px;
-      vertical-align: middle;
-    }
-  }
-
-  .charging-data-title {
-
-    h2 {
-      font-family: 'HelveticaNu';
-      font-weight: 400;
-      font-size: 18px;
-      color: map-get($colors, green-light);
-      margin: 15px 0;  
     }
   }
 
@@ -253,41 +181,6 @@
       padding-left: 10px;
     }
 
-  }
-
-  .btn-recurrent {
-    margin: 15px 0 20px;
-    font-size: 15px;
-    font-weight: 600;
-    color: map-get($colors, green-dark);
-    display: block;
-    text-decoration: none;
-  }
-
-  .recent-address, .recent-persons {
-    a {
-      padding-left: 35px;
-      padding-bottom: 20px;
-      display: block;
-      text-decoration: none;
-      color: map-get($colors, grey-dark);
-      font-size: 14px;
-    }
-  }
-
-  .container-contact {
-    .form-container{
-      width: 50%;
-      float: left;
-      margin-top: 0;
-
-      &:first-child {
-        padding-right: 5px;
-      }
-      &:last-child {
-        padding-left: 5px;
-      }
-    }
   }
 
 

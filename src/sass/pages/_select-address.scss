@@ -1,0 +1,24 @@
+.container-contact {
+  
+  .form-container{
+    width: 50%;
+    float: left;
+    margin-top: 0;
+
+    &:first-child {
+      padding-right: 5px;
+    }
+    &:last-child {
+      padding-left: 5px;
+    }
+  }
+}
+
+.map-container {
+  height: 160px;
+
+  @include breakpoint('tablet') {
+    height: 300px;
+    padding: 0 20px;
+  }
+}

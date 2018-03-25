@@ -29,6 +29,8 @@
 
   .vehicle-title {
     color: map-get($colors, green-dark);
+    font-size: 30px;
+    font-weight: 400;
   }
 
   .vehicle-description {

@@ -16,54 +16,31 @@ block content
         li.header-steps-item
           a(href="charging-data-04.html") 04
 
-      .charging-summary
-        .summary-menu.clearfix
-          .summary-price-model
-            span.price 35€
-            span /
-            span.model F500
-          a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
-            | Ver Resumen 
-            span.icon.icon-arrow-down
+      include charging-summary
 
-        ul.summary-details.dropdown#summary-dropdown
-          li.detail.detail-vehicle
-            img.icon-vehicle(src='./img/icon-van-00.svg', alt='Van')
-            | F/500
-          li.detail.detail-place
-            img.icon-place(src='./img/icon-place.svg', alt='Van')
-            .from Carrer de Pere IV, 51, 08018
-            .to Avenida Meridiana, 131, 08028
-          li.detail.detail-contact
-            span.icon.icon-user
-            | Andrea
-          li.detail.detail-time.clearfix
-            .date
-              span.icon.icon-calendar
-              | 17/03/2018
-            .hour
-              span.icon.icon-clock
-              | 11:15
+    .data-title-desktop
+      .container
+        h2 ¿Qué vehículo necesitas?
 
   section.charging-data
-    .container
-      .charging-data-title.data-title-fixed
-        h2 ¿Qué vehículo necesitas?
-    
-      .btn-vehicle.btn-overlay(data-overlay='overlay-vehicle')
-        .btn-vehicle-column
-          img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
-          .vehicle-name F/500
-          .vehicle-details 2mts x 3mts<br>500kg 
+    .container.container-charging-data
+      .charging-data-content
+        .charging-data-title
+          h2 ¿Qué vehículo necesitas?
+        .btn-vehicle.btn-overlay(data-overlay='overlay-vehicle')
+          .btn-vehicle-column
+            img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
+            .vehicle-name F/500
+            .vehicle-details 2mts x 3mts<br>500kg 
 
-        .btn-vehicle-column
-          .vehicle-price 35€
-          .vehicle-action CAMBIAR<br>VEHÍCULO
+          .btn-vehicle-column
+            .vehicle-price 35€
+            .vehicle-action CAMBIAR<br>VEHÍCULO
 
-    .charging-data-nav
-      a.next(href="charging-data-02.html")
-        span 02
-        span.icon-arrow-right
+      .charging-data-nav
+        a.next(href="charging-data-02.html")
+          span 02
+          span.icon-arrow-right
 
     .overlay#overlay-vehicle
       include select-vehicle

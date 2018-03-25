@@ -1,8 +1,8 @@
 a.icon-cross.close-overlay(onclick="saveAddressFrom();closeOverlay(this);")
-.select-address-from
+.overlay-container.select-address-from
   .address-from-form
     .container
-      .charging-data-title
+      .charging-data-title.clearfix
         h2 ¿Dónde recogemos la mercancía?
       .form-container
         span.form-icon.icon-house
@@ -19,7 +19,8 @@ a.icon-cross.close-overlay(onclick="saveAddressFrom();closeOverlay(this);")
           a(href="#") Address 3
         li.item-address
           a(href="#") Address 4
-    #map-canvas(style="height:160px;")
+    .map-container
+      #map-canvas
     .container
       .charging-data-title
         h2 Persona de contacto

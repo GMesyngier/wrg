@@ -34,6 +34,6 @@ $(function () {
 function saveDate() {
   var date = $('#datetimepicker').data('date');
   var time = $('#datetimepicker2').data('date');
-  $('.btn-select-date .date').html(date);
-  $('.btn-select-time .time').html(time);
+  $('#select-date').attr('value', date);
+  $('#select-time').attr('value', time);
 }

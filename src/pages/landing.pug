@@ -9,12 +9,19 @@ block content
       h1 <strong>Envía algo.</strong> Nosotros lo llevamos a su destino
 
       form.send-something-form(name='main-form')
-        .form-container
-          input(id='initial-place', placeholder='Dónde recogemos tu envío', required)
+        .form-container.input-complete-check
+          input.btn-overlay(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
           span.form-icon.icon-house
-        .form-container
-          input(id='final-place', placeholder='Dónde entregamos tu envío', required)
+        .contact-people.from
+          span.item-name Contacto:
+          span.item-contact Nadie aún.
+
+        .form-container.input-complete-check
+          input.btn-overlay(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde entregamos tu envío', required)
           span.form-icon.icon-box
+        .contact-people.to
+          span.item-name Contacto:
+          span.item-contact Nadie aún.
         
         .vehicle
           h4.text-center Qué vehículo necesitas
@@ -130,8 +137,18 @@ block content
   .overlay#overlay-vehicle
     include select-vehicle
 
+  .overlay#overlay-select-from
+    include select-address-from
+
+  .overlay#overlay-select-to
+    include select-address-to
+
 block js
   script(src="./js/menu.js")
-  script(src="./bower_components/slick-carousel/slick/slick.min.js")
+  script(src="./js/dropdown.js")
   script(src="./js/overlay.js")
+  script(src="./js/address.js")
+  script(src="./bower_components/slick-carousel/slick/slick.min.js")
+  script(src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCku4v2la7HjsiNn3FqCNtuhm3xnYcocLw")
+  script(src="./js/maps.js")
   script(src="./js/slider-vehicle.js")

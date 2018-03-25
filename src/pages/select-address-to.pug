@@ -1,8 +1,8 @@
 a.icon-cross.close-overlay(onclick="saveAddressTo(); closeOverlay(this);")
-.select-address-to
+.overlay-container.select-address-to
   form.address-to-form
     .container
-      .charging-data-title
+      .charging-data-title.clearfix
         h2 ¿Dónde dejamos la mercancía?
       .form-container
         span.form-icon.icon-box
@@ -20,7 +20,8 @@ a.icon-cross.close-overlay(onclick="saveAddressTo(); closeOverlay(this);")
         li.item-address
           a(href="#") Address 4
 
-    #map-canvas1(style="height:160px;")
+    .map-container
+      #map-canvas1
 
     .container
       .charging-data-title

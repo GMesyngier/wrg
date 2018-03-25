@@ -1,0 +1,184 @@
+.charging-summary {
+  position: relative;
+  background: transparent;
+  margin-left: 0;
+  width: 100%;
+  left: 0;
+  box-shadow: none;
+
+  @include breakpoint('desktop') {
+    position: absolute;
+    left: 50%;
+    background: white;
+    margin-left: 110px;
+    width: 386px;
+    box-shadow: 0px 7px 25px rgba(0,0,0, 0.2);
+  }
+}
+
+.summary-menu {
+  color: map-get($colors, green-dark);
+  margin-bottom: 8px;
+
+  .summary-price-model {
+    float: left;
+    padding: 0;
+
+    @include breakpoint('desktop') {
+      padding: 25px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: 400;
+      color: map-get($colors, green-dark);
+
+      @include breakpoint('desktop') {
+        font-size: 40px;
+        color: map-get($colors, grey-dark);
+
+      }
+    }
+
+    .description {
+      display: none;
+      padding-top: 10px;
+      color:  map-get($colors, green-light);
+
+      @include breakpoint('desktop') {
+        display: block;
+      }
+    }
+
+    .model {
+      display: inline;
+
+      @include breakpoint('desktop') {
+        display: none;
+      }
+    }
+  }
+
+  .btn-summary {
+    display: block;
+    float: right;
+    padding-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Quicksand';
+    font-weight: 600;
+
+    @include breakpoint('desktop') {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: map-get($colors, green-dark);
+  }
+}
+
+.summary-details {
+  background: transparent;
+  max-height: 0;
+  padding-top: 0;
+
+  @include breakpoint('desktop') {
+    background: map-get($colors, grey-dark);
+    max-height: 100%;
+    padding-top: 25px;
+  }
+
+  .detail-title {
+    display: none;
+    font-family: 'Quicksand';
+    color: map-get($colors, green-light);
+    padding: 0 25px;
+
+    @include breakpoint('desktop') {
+      display: block;
+    }
+  }
+  
+  .detail {
+    padding: 25px 0;
+    margin: 0;
+    background: transparent;
+
+    @include breakpoint('desktop') {
+      padding: 25px;
+      margin: 25px;
+      background: white;
+    }
+
+    &.detail-place {
+      position: relative;
+      border-top: 1px solid map-get($colors, green-light);
+
+      @include breakpoint('desktop') {
+        border-top: none;
+      }
+
+      .from {
+        position: absolute;
+        left: 35px;
+        top: 26px;
+
+        @include breakpoint('desktop') {
+          left: 55px;
+        }
+      }
+
+      .to {
+        position: absolute;
+        left: 35px;
+        top: 80px;
+
+        @include breakpoint('desktop') {
+          left: 55px;
+        }
+      }
+    }
+
+    &.detail-contact {
+      padding-top: 0;
+      border-bottom: 1px solid map-get($colors, green-light);
+
+      @include breakpoint('desktop') {
+        padding-top: 25px;
+        border-bottom: none;
+      }
+    }
+
+    &.detail-time {
+      
+      .date {
+        float: left;
+        width: 50%;
+      }
+
+      .hour {
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+
+  .icon-vehicle {
+    width: 55px;  
+    margin-right: 15px;
+
+  }
+
+  .icon-place {
+    width: 18px;
+  }
+
+  .icon {
+    font-size: 20px;
+    color: map-get($colors, green-light);
+    padding-right: 16px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,34 @@
+.charging-summary
+  .summary-menu.clearfix
+    .summary-price-model
+      span.price 35€
+      span.model / F500
+      span.description Lorem Ipsum
+    a.btn-summary.btn-dropdown(href="#", data-dropdown="summary-dropdown")
+      | Ver Resumen 
+      span.icon.icon-arrow-down
+
+  .summary-details.dropdown#summary-dropdown
+
+    .detail-title Vehículo
+    .detail.detail-vehicle
+      img.icon-vehicle(src='./img/icon-van-00.svg', alt='Van')
+      | F/500
+
+    .detail-title Recogida y entrega
+    .detail.detail-place
+      img.icon-place(src='./img/icon-place.svg', alt='Van')
+      .from Carrer de Pere IV, 51, 08018
+      .to Avenida Meridiana, 131, 08028
+    .detail.detail-contact
+      span.icon.icon-user
+      | Andrea
+
+    .detail-title Fecha y hora
+    .detail.detail-time.clearfix
+      .date
+        span.icon.icon-calendar
+        | 17/03/2018
+      .hour
+        span.icon.icon-clock
+        | 11:15
