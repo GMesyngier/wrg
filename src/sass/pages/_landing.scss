@@ -65,12 +65,14 @@
     .form-container {
       float: none;
       margin-top: 15px;
-      padding:0;
+      padding: 0;
+      width: 100%;
 
       @include breakpoint('tablet') {
         float: left;
         margin-top: 0;
         padding-right: 15px;
+        width: 34%;
       }
 
       input {
