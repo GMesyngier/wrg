@@ -27,28 +27,66 @@
       width: 270px;
       text-align: center;
       margin: 0 auto;
+      line-height: 1.5;
+      padding: 0;
 
       @include breakpoint('tablet') {
-        @include vertical-align;
-        text-align: left;
+        @include horizontal-align;
+        top: 210px;
         margin-top: -40px;
-        width: 45%;
-        max-width: 550px;
+        width: 100%;
+        max-width: 878px;
+        line-height: 1.2;
+        padding: 0 30px ;
+      }
+
+      @include breakpoint('desktop') {
+        top: 190px;
       }
     }
 
     .send-something-form {
-      margin-top: 30px;
       width: 100%;
+      margin-top: 30px;
       margin: 0 auto;
       float: none;
 
       @include breakpoint('tablet') {
-        width: 412px;
-        background: map-get($colors, grey-dark);
-        padding: 30px 35px 35px;
-        margin: 20px 0;
-        float: right;
+        background: rgba(map-get($colors, grey-dark), 0.9);
+        padding: 170px 35px 35px;
+        margin: 100px 0;
+      }
+      @include breakpoint('desktop') {
+        width: 1128px;
+        margin: 100px 0 100px -88px;
+      }
+    }
+    
+    .form-container {
+      float: none;
+      margin-top: 15px;
+      padding:0;
+
+      @include breakpoint('tablet') {
+        float: left;
+        margin-top: 0;
+        padding-right: 15px;
+      }
+
+      input {
+        padding: 25px 20px 25px 55px;
+
+        @include breakpoint('tablet') {
+          padding: 65px 20px 65px 55px;
+        }
+      }
+
+      .form-icon {
+        top: 24px;
+
+        @include breakpoint('tablet') {
+          top: 64px;
+        }
       }
     }
 
@@ -60,6 +98,11 @@
       
       h4 {
         margin: 25px 0;
+        display: block;
+
+        @include breakpoint('tablet') {
+          display: none;
+        }
       }
     }
 
@@ -158,6 +201,13 @@
     .btn-purchase {
       margin-top: 25px;
       width: 100%;
+
+      @include breakpoint('tablet') {
+        margin: 25px auto 0;
+        width: 100%;
+        max-width: 300px;
+      
+      }    
     }
   }
 

@@ -6,18 +6,18 @@ block bodyClass
 block content
   section.send-something-section
     .container.clearfix
-      h1 <strong>Envía algo.</strong> Nosotros lo llevamos a su destino
+      h1 ¿Un transporte puerta a puerta? ¿Inmediato? <strong>Nosotros nos encargamos</strong>
 
       form.send-something-form(name='main-form')
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
+          input.btn-overlay.elipsis(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
           span.form-icon.icon-house
         .contact-people.from
           span.item-name Contacto:
           span.item-contact Nadie aún.
 
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde entregamos tu envío', required)
+          input.btn-overlay.elipsis(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde entregamos tu envío', required)
           span.form-icon.icon-box
         .contact-people.to
           span.item-name Contacto:

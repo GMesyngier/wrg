@@ -16,6 +16,10 @@ h1, .h1 {
   font-size: 24px;
 
   @include breakpoint('tablet') {
+    font-size: 32px;
+  }
+
+  @include breakpoint('desktop') {
     font-size: 42px;
   }
 }
@@ -47,6 +51,12 @@ b, strong {
 
 .text-center {
   text-align: center;
+}
+
+.elipsis {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn {
