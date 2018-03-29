@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  z-index: -100;
 }
 
 .map-container {
@@ -27,4 +28,8 @@
     height: 300px;
     padding: 0 20px;
   }
+}
+
+.overlay-opened #map-canvas, .overlay-opened  #map-canvas1 {
+  z-index: 100;
 }

@@ -10,26 +10,21 @@ block content
 
       form.send-something-form(name='main-form')
         .form-container.input-complete-check
-          input.btn-overlay.elipsis(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
+          input.elipsis( id='select-from', placeholder='Dónde recogemos tu envío', required)
           span.form-icon.icon-house
-        .contact-people.from
-          span.item-name Contacto:
-          span.item-contact Nadie aún.
 
         .form-container.input-complete-check
-          input.btn-overlay.elipsis(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde entregamos tu envío', required)
+          input.elipsis( id='select-to', placeholder='Dónde entregamos tu envío', required)
           span.form-icon.icon-box
-        .contact-people.to
-          span.item-name Contacto:
-          span.item-contact Nadie aún.
         
         .vehicle
           h4.text-center Qué vehículo necesitas
           .btn-vehicle.btn-overlay(data-overlay='overlay-vehicle')
             .btn-vehicle-column
               img.icon-vehicle(src='./img/icon-van-01.svg', alt='Van')
-              .vehicle-name F/500
-              .vehicle-details 2mts x 3mts<br>500kg 
+              .vehicle-btn-details
+                .vehicle-name F/500
+                .vehicle-details 2mts x 3mts<br>500kg 
 
             .btn-vehicle-column
               .vehicle-price 35€
@@ -137,18 +132,8 @@ block content
   .overlay#overlay-vehicle
     include select-vehicle
 
-  .overlay#overlay-select-from
-    include select-address-from
-
-  .overlay#overlay-select-to
-    include select-address-to
-
 block js
   script(src="./js/menu.js")
-  script(src="./js/dropdown.js")
   script(src="./js/overlay.js")
-  script(src="./js/address.js")
   script(src="./bower_components/slick-carousel/slick/slick.min.js")
-  script(src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCku4v2la7HjsiNn3FqCNtuhm3xnYcocLw")
-  script(src="./js/maps.js")
   script(src="./js/slider-vehicle.js")

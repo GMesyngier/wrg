@@ -28,7 +28,8 @@ block content
         .charging-data-title
           h2 ¿Dónde recogemos la mercancía?
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-select-from", id='select-from', placeholder='Dónde recogemos tu envío', required)
+          .form-btn.btn-overlay(data-overlay="overlay-select-from")
+          input( id='select-from', placeholder='Dónde recogemos tu envío')
           span.form-icon.icon-house
         .contact-people.from
           span.item-name Contacto:
@@ -37,7 +38,8 @@ block content
         .charging-data-title
           h2 ¿Dónde enviamos la mercancía?
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-select-to", id='select-to', placeholder='Dónde recogemos tu envío', required)
+          .form-btn.btn-overlay(data-overlay="overlay-select-to")
+          input( id='select-to', placeholder='Dónde recogemos tu envío', readonly)
           span.form-icon.icon-box
         .contact-people.to
           span.item-name Contacto:
@@ -45,11 +47,16 @@ block content
       
       .charging-data-nav
         a.prev(href="charging-data-01.html") 
-          span.icon-arrow-left
-          span  01
+          span.icon.icon-arrow-left
+          span  Anterior
         a.next(href="charging-data-03.html")
-          span 03
-          span.icon-arrow-right
+          span Siguiente
+          span.icon.icon-arrow-right
+
+      .contact-us-fixed
+        img.icon-telephone(src='./img/icon-telephone-white.svg', alt='900 876 456')
+        .contact-us-description ¿Tienes dudas?
+        .contact-us-telephone 900 876 456
 
     .overlay#overlay-select-from
       include select-address-from

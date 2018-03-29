@@ -7,7 +7,7 @@ $('.select-vehicle-slider').slick({
     {
       breakpoint: 1024,
       settings: {
-        centerPadding: '40px',
+        centerPadding: '15px',
       }
     }
   ]

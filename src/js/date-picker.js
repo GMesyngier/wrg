@@ -2,6 +2,7 @@
 $(function () {
   $('#datetimepicker').datetimepicker({
     format: 'DD / MM / YYYY',
+    locale: 'es',
     inline: true,
     sideBySide: true,
     icons: {
@@ -16,9 +17,10 @@ $(function () {
   });
 
   $('#datetimepicker2').datetimepicker({
-    format: 'LT',
+    format: 'HH:mm',
     inline: true,
     sideBySide: true,
+    stepping: 15,
     icons: {
       time: 'icon icon-clock',
       date: 'icon icon-calendar',

@@ -79,7 +79,7 @@
       width: 95px;
       text-align: center;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 16px;
       color: map-get($colors, green-light);
       padding: 15px 0;
       margin: 40px 0 0;
@@ -95,9 +95,28 @@
       float: right;
       margin-right: -20px;
     }
+
+    .icon {
+      vertical-align: middle;
+      padding: 0 5px;
+    }
   }
 
   // ----------- 01
+
+  .charging-vehicle {
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 0;
+
+    @include breakpoint('desktop') {
+      padding: 0 20px;
+      max-width: 565px;
+      min-height: 565px;
+      float: left;
+    }
+  }
 
   .btn-vehicle {
     font-family: 'Quicksand';
@@ -158,6 +177,16 @@
       text-align: center;
       margin-top: 5px;
     }
+  }
+  
+  .select-vehicle-slider {
+    padding:  15px 0 0;
+    height: 530px;
+  }
+
+  .select-vehicle-slider-nav {
+    bottom: 0;
+    position: relative;
   }
 
   // ----------- 02

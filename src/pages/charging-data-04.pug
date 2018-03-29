@@ -20,19 +20,42 @@ block content
     
     .data-title-desktop
       .container
-        h2 Datos de pago
+        h2 ¿Tienes necesidades especiales?
 
   section.charging-data
     .container.container-charging-data
       .charging-data-content
         .charging-data-title
-          h2 Datos de pago
-        .btn.btn-overlay(data-overlay="special-needs") Tienes necesidades especiales?
+          h2 Necesidades especiales
+        .special-needs
+          ul.special-list
+            li.item-special
+              span.icon.icon-hand-up
+              span.description Item description
+            li.item-special
+              span.icon.icon-hand-up
+              span.description Item description
+            li.item-special
+              span.icon.icon-hand-up
+              span.description Item description
+            li.item-special
+              span.icon.icon-hand-up
+              span.description Item description
+            li.item-special
+              span.icon.icon-hand-up
+              span.description Item description
+          
+          .phone
+            span 
+              img.image-phone(src="./img/icon-telephone-white.svg", alt="Si tienes dudas 900 876 456")
+            span Si tienes dudas 900 876 456
+
+          a.btn.btn-pay(href="review.html") Pagar
 
       .charging-data-nav
         a.prev(href="charging-data-03.html") 
-          span.icon-arrow-left
-          span  03
+          span.icon.icon-arrow-left
+          span  Anterior
 
     .overlay#special-needs
       include select-special-needs

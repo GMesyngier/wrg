@@ -28,22 +28,24 @@ block content
         .charging-data-title
           h2 ¿Qué día recogemos el envío?
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-date", id='select-date', placeholder='Fecha', required)
+          .form-btn.btn-overlay(data-overlay="overlay-date")
+          input(id='select-date', placeholder='Fecha', required)
           span.form-icon.icon-calendar
           
         .charging-data-title
           h2 A que hora recogemos el envío?
         .form-container.input-complete-check
-          input.btn-overlay(data-overlay="overlay-date", id='select-time', placeholder='Hora', required)
+          .form-btn.btn-overlay(data-overlay="overlay-date")
+          input(id='select-time', placeholder='Hora', required)
           span.form-icon.icon-clock
 
       .charging-data-nav
         a.prev(href="charging-data-02.html") 
-          span.icon-arrow-left
-          span  02
+          span.icon.icon-arrow-left
+          span  Anterior
         a.next(href="charging-data-04.html")
-          span 04
-          span.icon-arrow-right
+          span Siguiente
+          span.icon.icon-arrow-right
     
     .overlay#overlay-date
       include select-date
@@ -54,6 +56,7 @@ block js
   script(src="./js/dropdown.js")
   script(src="./js/date-picker.js")
   script(src="./bower_components/moment/moment.js")
+  script(src="./bower_components/moment/locale/es.js")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
   script(src="./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js")
   script(src="./js/date-picker.js")

@@ -22,13 +22,19 @@
     }
   }
   .footer-column {
+    flex-basis: 33.3%;
+
+
+    @include breakpoint('tablet') {
+      flex-basis: 20%;
+    }
 
     &.footer-logo {
       flex-basis: 100%;
       text-align: center;
 
       @include breakpoint('tablet') {
-        flex-basis: auto;
+        flex-basis: 25%;
       }
 
       .logo {
@@ -42,6 +48,11 @@
 
     li {
       margin-top: 15px;
+      padding-right: 30px;
+
+      @include breakpoint('tablet') {
+        padding-right: 0px;
+      }
     }
 
     .link {

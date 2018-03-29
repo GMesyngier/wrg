@@ -13,7 +13,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 h1, .h1 {
   font-weight: 200;
-  font-size: 24px;
+  font-size: 21px;
 
   @include breakpoint('tablet') {
     font-size: 32px;
@@ -112,7 +112,7 @@ b, strong {
   text-align: center;
 
   @include breakpoint('tablet') {
-    padding: 90px 30px 50px;
+    padding: 90px 30px 60px;
   }
 
   h2 {
@@ -148,7 +148,7 @@ b, strong {
   h2 {
     font-family: 'HelveticaNu';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: map-get($colors, green-light);
     margin: 15px 0;  
   }
@@ -193,6 +193,18 @@ b, strong {
   position: relative;
   margin-top: 15px;
 
+  .form-btn {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    cursor: text;
+  }
+
   .form-icon {
     position: absolute;
     top: 24px;
@@ -203,6 +215,8 @@ b, strong {
   }
 
   input, textarea {
+    font-family: 'HelveticaNu';
+    font-weight: 200;
     padding: 25px 20px 25px 55px;
     transition: background .3s ease-in-out, color .3s ease-in-out;
   } 
@@ -212,6 +226,7 @@ b, strong {
   input:not(:placeholder-shown) {
     background: map-get($colors, green-light);
     color: map-get($colors, green-dark);
+    border-color: map-get($colors, green-light);
 
     +span { 
       color: map-get($colors, green-dark);
@@ -245,7 +260,7 @@ b, strong {
   height: 50px;
   border-radius: 50%; 
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   cursor: pointer;
 
   &:before {
@@ -288,6 +303,37 @@ input, textarea {
   padding: 15px 0;
 }
 
+.contact-us-fixed {
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 22px;
+  padding: 25px;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: map-get($colors, green-dark);
+  display: none;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.2);
+
+  @include breakpoint('desktop') {
+    display: block;
+  }
+
+  img {
+    width: 65px;
+  }
+  
+  .contact-us-description {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .contact-us-telephone {
+    color: map-get($colors, green-light);
+  }
+}
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: rgb(250, 255, 255) !important;

@@ -50,6 +50,14 @@
   background: transparent !important;
 }
 
+.bootstrap-datetimepicker-widget table td.today:before { 
+  display: none !important;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background: map-get($colors, grey-light) !important;
+}
+
 .bootstrap-datetimepicker-widget table td.active {
   background: map-get($colors, green-light) !important; 
   text-shadow: none !important;
@@ -57,15 +65,8 @@
 }
 
 .bootstrap-datetimepicker-widget table td.active:hover {
-  color: map-get($colors, green-light) !important;
-}
-
-.bootstrap-datetimepicker-widget table td.today:before { 
-  display: none !important;
-}
-
-.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
-  background: map-get($colors, grey-light) !important;
+  color: white;
+  background-color: map-get($colors, green-light) !important; 
 }
 
 .bootstrap-datetimepicker-widget table td span {
@@ -93,6 +94,10 @@
 
 .bootstrap-datetimepicker-widget table td span:hover {
   background: map-get($colors, grey-light) !important;
+}
+
+.bootstrap-datetimepicker-widget table td span.active:hover {
+  background: map-get($colors, green-light) !important;
 }
 
 .form-control {
