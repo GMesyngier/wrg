@@ -2,6 +2,7 @@ $('.select-vehicle-slider').slick({
   centerMode: true,
   centerPadding: '0',
   slidesToShow: 1,
+  arrows: false,
   asNavFor: '.select-vehicle-slider-nav',
   responsive: [
     {

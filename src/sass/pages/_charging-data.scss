@@ -109,12 +109,20 @@
     overflow: hidden;
     max-width: 100%;
     min-height: 0;
+    margin: 0 auto;
 
     @include breakpoint('desktop') {
       padding: 0 20px;
-      max-width: 565px;
+      max-width: 992px;
       min-height: 565px;
-      float: left;
+    }
+  }
+
+  .form-vehicle {
+    max-width: auto;
+
+    @include breakpoint('desktop') {
+      max-width: 565px;
     }
   }
 
@@ -181,7 +189,11 @@
   
   .select-vehicle-slider {
     padding:  15px 0 0;
-    height: 530px;
+    height: 600px;
+
+    @include breakpoint('desktop') {
+      padding: 0;
+    }
   }
 
   .select-vehicle-slider-nav {
@@ -198,7 +210,7 @@
   .contact-people {
     margin: 15px 0 30px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 200;
     color: map-get($colors, green-dark);
 
     .contact {

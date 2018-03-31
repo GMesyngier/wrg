@@ -5,11 +5,13 @@ a.icon-cross.close-overlay(onclick="closeOverlay(this); buttonVehicleData();")
       li.item-option
         input(type="radio", name="vehicle", value="1", id="vehicle1", checked)
         label(for="vehicle1")
-          h2.vehicle-title F/500
-          p.vehicle-description 2mts x 3mts 500kg
+          a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+            img(src="../img/icon-zoom.svg", alt="Zoom")
+          .section-title
+            h2.title F/500
           .image-vehicle
-            .icon-check
-            img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
+            img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+            img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
             .price 35€
           .vehicle-features.clearfix
             .feature-item
@@ -21,20 +23,19 @@ a.icon-cross.close-overlay(onclick="closeOverlay(this); buttonVehicleData();")
             .feature-item
               .item-title Carga útil
               .item-description 500kg
-            .feature-item
-              .item-title Capacidad cúbica
-              .item-description De 3 a 5m3
         
-          .instruction ( Haz clic para seleccionar )
+          .btn-instruction
 
       li.item-option
         input(type="radio", name="vehicle", value="2", id="vehicle2")
         label(for="vehicle2")
-          h2.vehicle-title F/1500
-          p.vehicle-description Máx 4mts x 5mts  900kg > 60km
+          a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+            img(src="../img/icon-zoom.svg", alt="Zoom")
+          .section-title
+            h2.title F/1500
           .image-vehicle
-            .icon-check
-            img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
+            img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+            img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
             .price 45€
           .vehicle-features.clearfix
             .feature-item
@@ -46,21 +47,20 @@ a.icon-cross.close-overlay(onclick="closeOverlay(this); buttonVehicleData();")
             .feature-item
               .item-title Carga útil
               .item-description 500kg
-            .feature-item
-              .item-title Capacidad cúbica
-              .item-description De 3 a 5m3
         
-          .instruction ( Haz clic para seleccionar )
+          .btn-instruction
 
       li.item-option
 
         input(type="radio", name="vehicle", value="3", id="vehicle3")
         label(for="vehicle3")
-          h2.vehicle-title Carrozado
-          p.vehicle-description Máx 2mts x 3mts  500kg > 30km
+          a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+            img(src="../img/icon-zoom.svg", alt="Zoom")
+          .section-title
+            h2.title Carrozado
           .image-vehicle
-            .icon-check
-            img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
+            img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+            img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
             .price 65€
           .vehicle-features.clearfix
             .feature-item
@@ -72,36 +72,9 @@ a.icon-cross.close-overlay(onclick="closeOverlay(this); buttonVehicleData();")
             .feature-item
               .item-title Carga útil
               .item-description 500kg
-            .feature-item
-              .item-title Capacidad cúbica
-              .item-description De 3 a 5m3
         
-          .instruction ( Haz clic para seleccionar )
+          .btn-instruction
 
-      li.item-option
-        input(type="radio", name="vehicle", value="4", id="vehicle4")
-        label(for="vehicle4")
-          h2.vehicle-title F/3500
-          p.vehicle-description Máx 2mts x 3mts  500kg > 30km
-          .image-vehicle
-            .icon-check
-            img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
-            .price 95€
-          .vehicle-features.clearfix
-            .feature-item
-              .item-title Capacidad
-              .item-description 1 palet EU
-            .feature-item
-              .item-title Paso de rueda
-              .item-description 1,25m
-            .feature-item
-              .item-title Carga útil
-              .item-description 500kg
-            .feature-item
-              .item-title Capacidad cúbica
-              .item-description De 3 a 5m3
-        
-          .instruction ( Haz clic para seleccionar )
               
     .select-vehicle-slider-nav
       a(hred="#")
@@ -109,6 +82,4 @@ a.icon-cross.close-overlay(onclick="closeOverlay(this); buttonVehicleData();")
       a(hred="#")
         img(src="../img/icon-van-02.svg", alt="F/500")
       a(hred="#")
-        img(src="../img/icon-van-03.svg", alt="F/500")
-      a(hred="#")
-        img(src="../img/icon-van-04.svg", alt="F/500")
+        img(src="../img/icon-van-03.svg", alt="F/500")  

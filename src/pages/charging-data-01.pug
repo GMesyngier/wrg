@@ -23,123 +23,95 @@ block content
         h2 ¿Qué vehículo necesitas?
 
   section.charging-data
+          
     .container.container-charging-data.clearfix
-      .container.charging-vehicle
-        .select-vehicle-section
-          .charging-data-title
-            h2 ¿Qué vehículo necesitas?
-          form
-            ul.select-vehicle-slider
-              li.item-option
-                input(type="radio", name="vehicle", value="1", id="vehicle1", checked)
-                label(for="vehicle1")
-                  h2.vehicle-title F/500
-                  p.vehicle-description 2mts x 3mts 500kg
-                  .image-vehicle
-                    .icon-check
-                    img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
-                    .price 35€
-                  .vehicle-features.clearfix
-                    .feature-item
-                      .item-title Capacidad
-                      .item-description 1 palet EU
-                    .feature-item
-                      .item-title Paso de rueda
-                      .item-description 1,25m
-                    .feature-item
-                      .item-title Carga útil
-                      .item-description 500kg
-                    .feature-item
-                      .item-title Capacidad cúbica
-                      .item-description De 3 a 5m3
-                
-                  .instruction ( Haz clic para seleccionar )
+      .select-vehicle-section
+        .charging-data-title
+          h2 ¿Qué vehículo necesitas?
+    .container.charging-vehicle
+      form.form-vehicle
+        ul.select-vehicle-slider
+          li.item-option
+            input(type="radio", name="vehicle", value="1", id="vehicle1", checked)
+            label(for="vehicle1")
+              a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+                img(src="../img/icon-zoom.svg", alt="Zoom")
+              .section-title
+                h2.title F/500
+              .image-vehicle
+                img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+                img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
+                .price 35€
+              .vehicle-features.clearfix
+                .feature-item
+                  .item-title Capacidad
+                  .item-description 1 palet EU
+                .feature-item
+                  .item-title Paso de rueda
+                  .item-description 1,25m
+                .feature-item
+                  .item-title Carga útil
+                  .item-description 500kg
+            
+              .btn-instruction
 
-              li.item-option
-                input(type="radio", name="vehicle", value="2", id="vehicle2")
-                label(for="vehicle2")
-                  h2.vehicle-title F/1500
-                  p.vehicle-description Máx 4mts x 5mts  900kg > 60km
-                  .image-vehicle
-                    .icon-check
-                    img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
-                    .price 45€
-                  .vehicle-features.clearfix
-                    .feature-item
-                      .item-title Capacidad
-                      .item-description 1 palet EU
-                    .feature-item
-                      .item-title Paso de rueda
-                      .item-description 1,25m
-                    .feature-item
-                      .item-title Carga útil
-                      .item-description 500kg
-                    .feature-item
-                      .item-title Capacidad cúbica
-                      .item-description De 3 a 5m3
-                
-                  .instruction ( Haz clic para seleccionar )
+          li.item-option
+            input(type="radio", name="vehicle", value="2", id="vehicle2")
+            label(for="vehicle2")
+              a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+                img(src="../img/icon-zoom.svg", alt="Zoom")
+              .section-title
+                h2.title F/1500
+              .image-vehicle
+                img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+                img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
+                .price 45€
+              .vehicle-features.clearfix
+                .feature-item
+                  .item-title Capacidad
+                  .item-description 1 palet EU
+                .feature-item
+                  .item-title Paso de rueda
+                  .item-description 1,25m
+                .feature-item
+                  .item-title Carga útil
+                  .item-description 500kg
+            
+              .btn-instruction
 
-              li.item-option
+          li.item-option
 
-                input(type="radio", name="vehicle", value="3", id="vehicle3")
-                label(for="vehicle3")
-                  h2.vehicle-title Carrozado
-                  p.vehicle-description Máx 2mts x 3mts  500kg > 30km
-                  .image-vehicle
-                    .icon-check
-                    img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
-                    .price 65€
-                  .vehicle-features.clearfix
-                    .feature-item
-                      .item-title Capacidad
-                      .item-description 1 palet EU
-                    .feature-item
-                      .item-title Paso de rueda
-                      .item-description 1,25m
-                    .feature-item
-                      .item-title Carga útil
-                      .item-description 500kg
-                    .feature-item
-                      .item-title Capacidad cúbica
-                      .item-description De 3 a 5m3
-                
-                  .instruction ( Haz clic para seleccionar )
+            input(type="radio", name="vehicle", value="3", id="vehicle3")
+            label(for="vehicle3")
+              a.btn-zoom(href="../img/vehicle-v1-horizontal@3x.png", target="_blank")
+                img(src="../img/icon-zoom.svg", alt="Zoom")
+              .section-title
+                h2.title Carrozado
+              .image-vehicle
+                img.picture.desktop(src="../img/vehicle-v1-horizontal@3x.png", alt="F/500")
+                img.picture.mobile(src="../img/vehicle-v1@3x.png", alt="F/500")
+                .price 65€
+              .vehicle-features.clearfix
+                .feature-item
+                  .item-title Capacidad
+                  .item-description 1 palet EU
+                .feature-item
+                  .item-title Paso de rueda
+                  .item-description 1,25m
+                .feature-item
+                  .item-title Carga útil
+                  .item-description 500kg
+            
+              .btn-instruction
 
-              li.item-option
-                input(type="radio", name="vehicle", value="4", id="vehicle4")
-                label(for="vehicle4")
-                  h2.vehicle-title F/3500
-                  p.vehicle-description Máx 2mts x 3mts  500kg > 30km
-                  .image-vehicle
-                    .icon-check
-                    img.picture(src="../img/vehicle-01@2x.png", alt="F/500")
-                    .price 95€
-                  .vehicle-features.clearfix
-                    .feature-item
-                      .item-title Capacidad
-                      .item-description 1 palet EU
-                    .feature-item
-                      .item-title Paso de rueda
-                      .item-description 1,25m
-                    .feature-item
-                      .item-title Carga útil
-                      .item-description 500kg
-                    .feature-item
-                      .item-title Capacidad cúbica
-                      .item-description De 3 a 5m3
-                
-                  .instruction ( Haz clic para seleccionar )
-                      
-            .select-vehicle-slider-nav
-              a(hred="#")
-                img(src="../img/icon-van-00.svg", alt="F/500")
-              a(hred="#")
-                img(src="../img/icon-van-02.svg", alt="F/500")
-              a(hred="#")
-                img(src="../img/icon-van-03.svg", alt="F/500")
-              a(hred="#")
-                img(src="../img/icon-van-04.svg", alt="F/500")
+                  
+        .select-vehicle-slider-nav
+          a(hred="#")
+            img(src="../img/icon-van-00.svg", alt="F/500")
+          a(hred="#")
+            img(src="../img/icon-van-02.svg", alt="F/500")
+          a(hred="#")
+            img(src="../img/icon-van-03.svg", alt="F/500")  
 
     .container.container-charging-data
       .charging-data-nav

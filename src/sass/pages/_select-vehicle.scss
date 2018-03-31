@@ -1,17 +1,58 @@
 .select-vehicle-slider {
   text-align: center;
   padding: 0;
+  margin: 0;
 
   @include breakpoint('desktop') {
     text-align: left;
     padding: 50px 0;
   }
 
-  .instruction {
-    color: #ccc;
+  .btn-zoom {
+    @include horizontal-align;
+    z-index: 10;
+    width: 50px;
+    top: 165px;
+
+  }
+
+  .section-title {
+    color: map-get($colors, green-light);
+    text-align: left;
+    display: inherit;
+    padding: 0;
+
+    h2 {
+      margin-bottom: -25px;
+      
+      &:after {
+        background: map-get($colors, green-light);
+      }
+    }
+  }
+
+  .btn-instruction {
+    margin: 60px auto 0;
+    max-width: 300px;
+    color: map-get($colors, green-light);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1;
     text-align: center;
-    margin: 60px 0 0;
-    display: none;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 1px solid map-get($colors, green-light);
+    padding: 15px 40px;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    @include transition(background 0.3s ease-in-out, color 0.3s ease-in-out);
+
+    &:before {
+      display: block;
+      content: 'Seleccionar';
+    }
     
     @include breakpoint('desktop') {
       display: block;
@@ -27,6 +68,7 @@
       height: 100%;
       width: 94%;
       left: 0;
+      z-index: 2;
 
       @include breakpoint('desktop') {
         width: 100%;
@@ -34,28 +76,15 @@
       
       &:checked + label {
 
-        .image-vehicle {
-          border-color: map-get($colors, green-dark);
-        }
+        .btn-instruction {
+          background: map-get($colors, green-light);
+          color: white;
 
-        .icon-check {
-          @include transform(scale(1));
-        }
-
-        .price {
-          background: map-get($colors, green-dark);
+          &:before {
+            content: 'Seleccionado';
+          }
         }
       }
-    }
-  }
-
-  .vehicle-title {
-    color: map-get($colors, green-dark);
-    font-size: 30px;
-    font-weight: 400;
-
-    @include breakpoint('desktop') {
-
     }
   }
 
@@ -69,24 +98,12 @@
     height: 235px;
     padding: 25px;
     background: #EFEFEF;
-    border: 1px solid grey;
     position: relative;
-    @include transition(border-color 0.3s ease-in-out);
 
     @include breakpoint('desktop') {
       margin: 25px auto 0;
       background: white;
       width: 100%;
-    }
-
-    .icon-check {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 30px;
-      color: map-get($colors, green-dark);
-      @include transform(scale(0));
-      @include transition(transform 0.3s ease-in-out);
     }
 
     .picture {
@@ -105,23 +122,22 @@
     .price {
       text-align: center;
       font-size: 30px;
-      color: white;
+      color: map-get($colors, green-dark);
       height: 85px;
       width: 85px;
       border-radius: 50%;
-      background: grey;
+      background: map-get($colors, green-light);
       position: absolute;
       bottom: -42.5px;
       top: auto;
       left: 50%;
       line-height: 2.7;
-      @include transition(background-color 0.3s ease-in-out);
-      @include transform(translateX(-50%));
 
       @include breakpoint('desktop') {
-        top: 15px;
+        top: -70px;
         bottom: auto;
-        left: 60px;
+        right: 0;
+        left: auto;
       }
 
     }
@@ -145,10 +161,16 @@
       float: left;
       margin: 10px 0 0;
       text-align: center;
+      border: none;
 
       @include breakpoint('desktop') {
         margin: 0;
-        width: 25%;
+        width: 33.3%;
+        border-right: 1px solid map-get($colors, green-light);
+
+        &:last-child {
+          border-right: none;
+        }
       }
       
       .item-title {
@@ -172,6 +194,22 @@
           color: white;
         }
       }
+    }
+  }
+
+  .mobile {
+    display: block;
+  
+    @include breakpoint('desktop') {
+      display: none;
+    }
+  }
+  
+  .dekstop {
+    display: none;
+  
+    @include breakpoint('desktop'){
+      display: block;
     }
   }
 }
