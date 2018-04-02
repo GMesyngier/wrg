@@ -22,10 +22,14 @@ $('.select-vehicle-slider-nav').slick({
   dots: false
 });
 
+$('.select-vehicle-section input[type="radio"]#vehicle1').attr('checked', true);
+
+
 function buttonVehicleData() {
   var iconVehicle = $('.select-vehicle-slider-nav .slick-current img').attr('src');
-  $('.btn-vehicle .vehicle-name').html($('.select-vehicle-section input[type="radio"]:checked + label .vehicle-title').text());
-  $('.btn-vehicle .vehicle-details').html($('.select-vehicle-section input[type="radio"]:checked + label .vehicle-description').text());
+  $('.btn-vehicle .vehicle-name').html($('.select-vehicle-section input[type="radio"]:checked + label .title').text());
   $('.btn-vehicle .vehicle-price').html($('.select-vehicle-section input[type="radio"]:checked + label .price').text());
   $('.btn-vehicle .icon-vehicle').attr('src', iconVehicle);
+
+  console.log($('.select-vehicle-section input[type="radio"]:checked + label .title').text());
 }

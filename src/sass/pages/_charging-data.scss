@@ -163,7 +163,7 @@
 
     .vehicle-details {
       font-family: 'HelveticaNu';
-      font-weight: 2  00;
+      font-weight: 200;
       font-size: 13px;
       color: map-get($colors, green-dark);
       text-align: center;
@@ -189,7 +189,11 @@
   
   .select-vehicle-slider {
     padding:  15px 0 0;
-    height: 600px;
+    height: 495px;
+
+    @include breakpoint('tablet') {
+      height: 600px;
+    }
 
     @include breakpoint('desktop') {
       padding: 0;

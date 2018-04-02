@@ -382,6 +382,24 @@ display: none;
   }
 }
 
+.pop-vehicle-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  .horizontal-image {
+    @include center-align;
+    width: 80%;
+    height: auto;
+  }
+
+  .vertical-image {
+    @include center-align;
+    width: auto;
+    height: 80%;
+  }
+}
+
 .clearfix {
   @include clearfix;
 }

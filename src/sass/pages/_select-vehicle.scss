@@ -19,20 +19,39 @@
   .section-title {
     color: map-get($colors, green-light);
     text-align: left;
-    display: inherit;
+    display: inline-block;
+    width: 300px;
     padding: 0;
 
+    @include breakpoint('tablet') {
+      width: 525px;
+    }
+
+    @include breakpoint('desktop') {
+      display: block;
+      width: 100%;
+    }
+
     h2 {
-      margin-bottom: -25px;
+      display: inline-block;
+      padding: 0 0 0 25px;
+
+      @include breakpoint('desktop') {
+        padding: 0 0 25px;
+      }
       
       &:after {
-        background: map-get($colors, green-light);
+        background: transparent;
+      
+        @include breakpoint('desktop') {
+          background: map-get($colors, green-light);
+        }
       }
     }
   }
 
   .btn-instruction {
-    margin: 60px auto 0;
+    margin: 25px auto 0;
     max-width: 300px;
     color: map-get($colors, green-light);
     font-family: 'Quicksand';
@@ -44,18 +63,23 @@
     border-radius: 28px;
     border: 1px solid map-get($colors, green-light);
     padding: 15px 40px;
-    width: 100%;
+    width: 80%;
     cursor: pointer;
     display: block;
     @include transition(background 0.3s ease-in-out, color 0.3s ease-in-out);
-
-    &:before {
-      display: block;
-      content: 'Seleccionar';
+    
+    @include breakpoint('tablet') {
+      margin: 60px auto 0;
+      width: 100%;
     }
     
     @include breakpoint('desktop') {
       display: block;
+    }
+
+    &:before {
+      display: block;
+      content: 'Seleccionar';
     }
   }
 
@@ -93,16 +117,15 @@
   }
 
   .image-vehicle {
-    margin: 25px auto;
+    margin: 15px auto;
     width: 265px;
     height: 235px;
     padding: 25px;
-    background: #EFEFEF;
+    background: white;
     position: relative;
 
     @include breakpoint('desktop') {
-      margin: 25px auto 0;
-      background: white;
+      margin: 0 auto;
       width: 100%;
     }
 
@@ -121,23 +144,35 @@
 
     .price {
       text-align: center;
-      font-size: 30px;
-      color: map-get($colors, green-dark);
-      height: 85px;
-      width: 85px;
+      font-size: 26px;
+      color: #6D740D;
+      height: 65px;
+      width: 65px;
       border-radius: 50%;
-      background: map-get($colors, green-light);
+      background: #C8D41B;
       position: absolute;
-      bottom: -42.5px;
-      top: auto;
-      left: 50%;
-      line-height: 2.7;
+      line-height: 2.4;
+      bottom: 0;
+      top: -42px;
+      left: auto;
+      right: 10px;
+      margin-left: 0;
+
+
+      @include breakpoint('tablet') {
+        right: -100px;
+
+      }
 
       @include breakpoint('desktop') {
-        top: -70px;
-        bottom: auto;
+        font-size: 30px;
+        color: map-get($colors, green-dark);
+        height: 85px;
+        width: 85px;
+        background: map-get($colors, green-light);
+        line-height: 2.7;
+        top: -68px;    
         right: 0;
-        left: auto;
       }
 
     }
@@ -145,7 +180,7 @@
 
   .vehicle-features {
     width: 300px;
-    margin: 35px auto 0;
+    margin: 25px auto 0;
     padding: 0;
     background: transparent;
 
@@ -157,7 +192,7 @@
     }
     
     .feature-item {
-      width: 50%;
+      width: 33%;
       float: left;
       margin: 10px 0 0;
       text-align: center;
@@ -165,7 +200,6 @@
 
       @include breakpoint('desktop') {
         margin: 0;
-        width: 33.3%;
         border-right: 1px solid map-get($colors, green-light);
 
         &:last-child {
@@ -205,7 +239,7 @@
     }
   }
   
-  .dekstop {
+  .desktop {
     display: none;
   
     @include breakpoint('desktop'){
