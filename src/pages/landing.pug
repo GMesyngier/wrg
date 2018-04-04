@@ -63,8 +63,10 @@ block content
   section.video-section
     .section-title
       h2.title Por qué Wecargo
-    .video-container 
-      iframe(src="https://player.vimeo.com/video/240463021?1&color=73848B&title=0&byline=0&portrait=0", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+    a.video-banner(href="https://player.vimeo.com/video/240463021?1&color=73848B&title=0&byline=0&portrait=0")
+      img.video-image.mobile(src='./img/video-banner-mobile@2x.png', alt='Por qué Wecargo')
+      img.video-image.tablet(src='./img/video-banner-desktop@2x.png', alt='Por qué Wecargo')
+      img.video-image.desktop(src='./img/video-banner-desktop@2x.png', alt='Por qué Wecargo')
   
   section.values-section
     .section-title
@@ -135,4 +137,6 @@ block js
   script(src="./js/menu.js")
   script(src="./js/overlay.js")
   script(src="./bower_components/slick-carousel/slick/slick.min.js")
+  script(src="./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js")
+  script(src="./js/video.js")
   script(src="./js/slider-vehicle.js")

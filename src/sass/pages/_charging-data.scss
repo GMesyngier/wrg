@@ -34,7 +34,7 @@
 
     @include breakpoint('desktop') {
       max-width: 565px;
-      min-height: 565px;
+      min-height: 535px;
     }
   }
 
@@ -73,6 +73,10 @@
 
   .charging-data-nav {
     @include clearfix;
+    padding: 0 0 25px;
+    border-top: 2px solid #BCBCBB;
+    margin-top: 65px;
+    background: transparent url('../img/bg-nav.jpg') repeat-x top center;
     
     a {
       font-family: 'Quicksand';
@@ -80,10 +84,8 @@
       text-align: center;
       text-decoration: none;
       font-size: 16px;
+      font-weight: 600;
       color: map-get($colors, green-light);
-      padding: 15px 0;
-      margin: 40px 0 0;
-      border-top: 1px solid map-get($colors, green-light);
     }
     
     .prev {
@@ -112,9 +114,61 @@
     margin: 0 auto;
 
     @include breakpoint('desktop') {
-      padding: 0 20px;
+      padding: 25px 20px;
       max-width: 992px;
       min-height: 565px;
+    }
+
+    .btn-instruction {
+      display: none;
+    }
+
+    .price {
+      display: none;
+    }
+
+    .section-title {
+      padding: 25px 0;
+      width: 100%;
+      text-align: center;
+
+      @include breakpoint('tablet') {
+        text-align: left;
+        padding: 15px 0;
+        width: 96%;
+      }
+
+      @include breakpoint('desktop') {
+        width: 465px;
+        padding: 0;
+      }
+
+      h2 {
+        padding: 0;
+
+        @include breakpoint('tablet') {
+          padding: 15px 0;
+        }
+      }
+    }
+
+    .select-vehicle-slider-nav {
+      margin-top: -75px;
+
+      @include breakpoint('desktop') {
+        margin-top: -115px;
+      }
+    }
+
+    .select-vehicle-slider {
+      
+      .image-vehicle {
+        height: 285px;
+        
+        .picture {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -284,7 +338,7 @@
     }
 
     .phone {
-      margin: 30px auto;
+      margin: 10px auto;
       text-align: center;
 
       .image-phone {

@@ -145,12 +145,47 @@ b, strong {
 
 .charging-data-title {
 
+  margin-top: 10px;
+
   h2 {
-    font-family: 'HelveticaNu';
-    font-weight: 400;
-    font-size: 16px;
+    font-family: 'Quicksand';
+    font-size: 18px;
     color: map-get($colors, green-light);
-    margin: 15px 0;  
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+
+    @include breakpoint('tablet') {
+      padding: 0 0 15px;
+      font-size: 26px;
+      font-weight: 600;
+    }
+    
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: map-get($colors, grey-dark);
+      content: '';
+      display: none;
+      height: 2px;
+      width: 60px;
+
+      @include breakpoint('tablet') {
+        display: block;
+        background: map-get($colors, green-light);
+      }
+    }
+  }
+
+  .description {
+    color: #888888;
+    padding-bottom: 25px;
+    display: none;
+
+    @include breakpoint('tablet') {
+      display: block;
+    }
   }
 }
 
@@ -364,7 +399,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 .tablet {
-display: none;
+  display: none;
 
   @include breakpoint('tablet'){
     display: block;
@@ -374,7 +409,7 @@ display: none;
   }
 }
 
-.dekstop {
+.desktop {
   display: none;
 
   @include breakpoint('desktop'){

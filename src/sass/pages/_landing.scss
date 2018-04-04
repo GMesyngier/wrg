@@ -352,20 +352,14 @@
     }
   }
 
-  .video-container {
+  .video-banner {
     width: 100%;
-    height: 56.25vw;
     z-index: 0;
     //pointer-events: none;
     overflow: hidden;
 
-    iframe {
-      width: 100vw;
-      height: 56.25vw; // Height 16:9 aspect ratio 56.25 ||  Width given a 16:9 aspect ratio 177.77 
-      position: absolute;
-      top: 0x;
-      left: 50%;
-      transform: translateX(-50%);
+    .video-image {
+      width: 100%;
     }
   }
 

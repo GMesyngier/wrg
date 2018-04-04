@@ -26,7 +26,8 @@ block content
     .container.container-charging-data
       .charging-data-content
         .charging-data-title
-          h2 ¿Dónde recogemos la mercancía?
+          h2 Lugar de recogida
+          .description Lorem ipsum dolor aemet
         .form-container.input-complete-check
           .form-btn.btn-overlay(data-overlay="overlay-select-from")
           input( id='select-from', placeholder='Dónde recogemos tu envío')
@@ -36,7 +37,8 @@ block content
           span.item-contact Nadie aún.
           
         .charging-data-title
-          h2 ¿Dónde enviamos la mercancía?
+          h2 Lugar de entrega
+          .description Lorem ipsum dolor aemet
         .form-container.input-complete-check
           .form-btn.btn-overlay(data-overlay="overlay-select-to")
           input( id='select-to', placeholder='Dónde recogemos tu envío', readonly)
@@ -44,14 +46,16 @@ block content
         .contact-people.to
           span.item-name Contacto:
           span.item-contact Nadie aún.
+
       
-      .charging-data-nav
-        a.prev(href="charging-data-01.html") 
-          span.icon.icon-arrow-left
-          span  Anterior
-        a.next(href="charging-data-03.html")
-          span Siguiente
-          span.icon.icon-arrow-right
+    .charging-data-nav  
+      .container.clearfix
+          a.prev(href="charging-data-01.html") 
+            span.icon.icon-arrow-left
+            span  Anterior
+          a.next(href="charging-data-03.html")
+            span Siguiente
+            span.icon.icon-arrow-right
 
       .contact-us-fixed
         img.icon-telephone(src='./img/icon-telephone-white.svg', alt='900 876 456')
